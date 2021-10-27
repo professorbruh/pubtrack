@@ -1,8 +1,6 @@
 package com.pubtrack.pubtrack;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 @Entity
 public class Student {
@@ -10,6 +8,7 @@ public class Student {
     @Column(name="student_id")
     private int ref_id;
     private String name;
+    private String email;
     @Column(name="academic_year")
     private String academic_year;
     private String branch;
@@ -70,6 +69,21 @@ public class Student {
      */
     public void setBranch(String branch) {
         this.branch = branch;
+    }
+
+
+    /**
+     * @return String return the email
+     */
+    public String getEmail() {
+        return email;
+    }
+
+    /**
+     * @param email the email to set
+     */
+    public void setEmail(String email) {
+        this.email = email;
     }
 
 }
