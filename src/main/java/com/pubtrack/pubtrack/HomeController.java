@@ -6,12 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Iterator;
 import java.util.List;
 import javax.servlet.http.HttpSession;
-
+import com.pubtrack.pubtrack.StudentRepo;
 @Controller
 public class HomeController 
-{
+{ 
     @Autowired
     StudentRepo student_repo;
 
@@ -27,10 +29,10 @@ public class HomeController
     @RequestMapping("test")
     public ModelAndView test()
     {
-        ModelAndView mv = new ModelAndView();
-        List<Student> listStudents = (List<Student>) student_repo.findAll();
-        mv.addObject("liststu", listStudents);
-        mv.setViewName("testpage.jsp");
+        ModelAndView mv = new ModelAndView("testpage.jsp");
+        Student st = student_repo.findById(18469).orElse(new Student());
+        mv.addObject("st",st);
+        System.out.println(st.getRef_id());
         return mv;
     }
     
