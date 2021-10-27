@@ -1,6 +1,8 @@
 package com.pubtrack.pubtrack;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 @Entity
 public class Login {
     @Id
@@ -52,4 +54,3 @@ public class Login {
     }
 
 }
-

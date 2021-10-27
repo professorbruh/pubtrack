@@ -1,7 +1,11 @@
 package com.pubtrack.pubtrack;
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 @Entity
 public class Student {
     @Id
@@ -12,6 +16,8 @@ public class Student {
     @Column(name="academic_year")
     private String academic_year;
     private String branch;
+    @OneToMany
+    private Set<Student> student = new HashSet<>();
     protected Student() {}
     
 

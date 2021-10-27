@@ -7,7 +7,7 @@ import java.util.Set;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-
+import javax.persistence.OneToOne;
 
 import org.springframework.format.annotation.DateTimeFormat;
 @Entity
@@ -25,6 +25,9 @@ public class Editor {
     private Date date;
     @OneToMany
     private Set<Editor> editors = new HashSet<>();
+
+
+   
 
 
     /**
@@ -98,16 +101,16 @@ public class Editor {
     }
 
     /**
-     * @return String return the email
+     * @return Login return the email
      */
-    public String getEmail() {
+    public Login getEmail() {
         return email;
     }
 
     /**
      * @param email the email to set
      */
-    public void setEmail(String email) {
+    public void setEmail(Login email) {
         this.email = email;
     }
 
@@ -153,18 +156,17 @@ public class Editor {
         this.date = date;
     }
 
-
     /**
-     * @return Set return the editors
+     * @return Set<Editor> return the editors
      */
-    public Set getEditors() {
+    public Set<Editor> getEditors() {
         return editors;
     }
 
     /**
      * @param editors the editors to set
      */
-    public void setEditors(Set editors) {
+    public void setEditors(Set<Editor> editors) {
         this.editors = editors;
     }
 

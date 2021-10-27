@@ -17,7 +17,8 @@ public class Paper {
     @Id
     private String ref_id;
     private String title;
-    private String domiain;
+    private String domain;
+    private int status;
     @DateTimeFormat
     private Date data_of_submission;
     private String plagiarism_percentage;
@@ -29,6 +30,10 @@ public class Paper {
     @OneToOne
     @PrimaryKeyJoinColumn
     private Published published;
+    @ManyToOne
+    @JoinColumn(name = "student_id")
+    private Student student;
+
 
 
 
@@ -62,17 +67,31 @@ public class Paper {
     }
 
     /**
-     * @return String return the domiain
+     * @return String return the domain
      */
-    public String getDomiain() {
-        return domiain;
+    public String getDomain() {
+        return domain;
     }
 
     /**
-     * @param domiain the domiain to set
+     * @param domain the domain to set
      */
-    public void setDomiain(String domiain) {
-        this.domiain = domiain;
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
+
+    /**
+     * @return int return the status
+     */
+    public int getStatus() {
+        return status;
+    }
+
+    /**
+     * @param status the status to set
+     */
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     /**
@@ -143,6 +162,20 @@ public class Paper {
      */
     public void setEditor(Editor editor) {
         this.editor = editor;
+    }
+
+    /**
+     * @return Published return the published
+     */
+    public Published getPublished() {
+        return published;
+    }
+
+    /**
+     * @param published the published to set
+     */
+    public void setPublished(Published published) {
+        this.published = published;
     }
 
 }
