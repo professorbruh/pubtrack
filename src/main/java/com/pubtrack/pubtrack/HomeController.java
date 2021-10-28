@@ -75,7 +75,7 @@ public class HomeController
     @RequestMapping("student_dash")
     public ModelAndView student_login(HttpSession session)
     {
-        ModelAndView mv = new ModelAndView("test.jsp");
+        ModelAndView mv = new ModelAndView("student_dash.jsp");
         String s = (String)session.getAttribute("user_email");
         Login st = login_repo.findById("sidharthrajagopal1123@gmail.com").orElse(new Login());
         Iterable<Paper> paper= paper_repo.findAll();

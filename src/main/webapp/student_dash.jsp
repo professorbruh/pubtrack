@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -186,11 +187,12 @@
                 <div class="container">
                     <article class="card">
                         <header class="card-header"> Paper Tracking </header>
+                         <c:forEach items="${papers}" var = "p">
                         <div class="card-body">
-                            <h6>Paper ID: OD45345345435</h6>
+                            <h6>Reference ID : ${p.ref_id}</h6>
                             <article class="card">
                                 <div class="card-body row">
-                                    <div class="col"> <strong>Author:</strong> <br> John Doe</div>
+                                    <div class="col"> <strong>Author:</strong> <br> ${p.student.name}</div>
                                     <div class="col"> <strong>Status:</strong> <br> Stage 2 </div>
                                     <!--
                                     <div class="col"> <strong>Reason:</strong> <br> - </div>
@@ -213,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        </c:forEach>
                         <div class="card-body">
                             <h6>Paper ID: OD45345345435</h6>
                             <article class="card">
