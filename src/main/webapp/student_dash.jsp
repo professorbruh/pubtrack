@@ -247,10 +247,6 @@
                                     <div class="col"> <strong>Status:</strong> <br> Published </div>
                                     <div class="col"> <strong>Reason:</strong> <br> - </div>
                                     <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
-                                    <c:forEach items="${papers}" var = "p">
-                                ${p.ref_id}
-                                <td></td>
-                                </c:forEach>
                                 </div>
                             </article>
                             <div class="track">
