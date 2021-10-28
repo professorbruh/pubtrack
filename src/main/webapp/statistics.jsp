@@ -78,7 +78,7 @@
 	<div class="sidebar">
 		<ul class="sidebar-nav">
 			<li class="sidebar-nav-item">
-				<a href="statistics.html" class="sidebar-nav-link active">
+				<a href="/statistics" class="sidebar-nav-link active">
 					<div>
 						<i class="fa fa-bar-chart"></i>
 					</div>
@@ -88,7 +88,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="status.html" class="sidebar-nav-link">
+				<a href="/status" class="sidebar-nav-link">
 					<div>
 						<i class="fa fa-th-list"></i>
 					</div>
@@ -104,7 +104,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="#" class="sidebar-nav-link">
+				<a href="/faq" class="sidebar-nav-link">
 					<div>
 						<i class="fa fa-question-circle"></i>
 					</div>
