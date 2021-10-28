@@ -3,16 +3,11 @@ package com.pubtrack.pubtrack;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
 
-import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import javax.servlet.http.HttpSession;
-import com.pubtrack.pubtrack.StudentRepo;
 @Controller
 public class HomeController 
 { 
@@ -80,7 +75,7 @@ public class HomeController
     @RequestMapping("publisher_dashboard")
     public ModelAndView publisher_login(HttpSession session)
     {
-        ModelAndView mv = new ModelAndView("statistics.jsp");
+        ModelAndView mv = new ModelAndView("status.jsp");
         return mv;
     }
     @RequestMapping("reviewer_dashboard")
