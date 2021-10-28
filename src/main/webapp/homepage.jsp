@@ -4,11 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="homepage.css">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
     .column {
         float: left;
@@ -53,9 +52,10 @@
             <h1>Publication tracking portal</h1>
             <p>The one stop for publishing your article.</p>
         </div>
+        </div>
 </div>
-<div class="container color">
-    <div class="text">
+<div class="container-fluid pt-3 color">
+    <div class="text-center">
         <h1>Upcoming Conferences</h1>
     </div>
     <div class="Row " >
@@ -94,25 +94,25 @@
                     <span><i class="fa fa-location-arrow " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">Location</span>
             </div>
         </div>
-        </div>
     </div>
+</div>
   <div class="container">
         <div class="text">
             <h1>Our users include</h1>
         </div>
         <div class="main">
             <div class="single">
-                <i class=" fa-user-circle-o"></i>
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 <p>Authors. The people who wants the world to know about their research.</p>
                 <a href="index.html">More info</a>
             </div>
             <div class="single">
-                <i class=" fa-user-circle-o"></i>
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 <p>Publishing House. THey are the people who are toch bearers for the papers and researched conducted by the authors.</p>
                 <a href="index.html">More info</a>
             </div>
             <div class="single">
-                <i class=" fa-user-circle-o"></i>
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 <p>Reviewers. They are responsible for reviewing articles/papers that are of the same domain as theirs.</p>
                 <a href="index.html">More info</a>
             </div>
