@@ -83,7 +83,7 @@
 	<div class="sidebar">
 		<ul class="sidebar-nav">
 			<li class="sidebar-nav-item">
-				<a href="statistics.html" class="sidebar-nav-link">
+				<a href="/statistics" class="sidebar-nav-link">
 					<div>
 						<i class="fa fa-bar-chart"></i>
 					</div>
@@ -93,7 +93,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="status.html" class="sidebar-nav-link active">
+				<a href="/status" class="sidebar-nav-link active">
 					<div>
 						<i class="fa fa-th-list"></i>
 					</div>
@@ -101,7 +101,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="gatepass_fac.php" class="sidebar-nav-link">
+				<a href="#" class="sidebar-nav-link">
 					<div>
 						<i class="fa fa-home"></i>
 					</div>
@@ -109,7 +109,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="help.php" class="sidebar-nav-link">
+				<a href="/faq" class="sidebar-nav-link">
 					<div>
 						<i class="fa fa-question-circle"></i>
 					</div>
@@ -160,10 +160,10 @@
 
 								</thead>
 								<tbody>
-
+                                        <c:forEach var="published" items="${published}"></c:forEach>
 										 <tr>
 
-											 <td>98-45-123945</td>
+											 <td>12344</td>
 											 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
 											 <td>Sheena Angra
 Chitkara University, India
@@ -175,117 +175,9 @@ CURIN, Chitkara University, India</td>
 											 <td>05-11-2016</td>
 
 											 <tr>
+												 </tr>c:forEach>
 
 
-												 <tr>
-
-													 <td>98-45-123945</td>
-													 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-													 <td>Sheena Angra
-		Chitkara University, India
-		<br>
-		Sachin Ahuja
-		CURIN, Chitkara University, India</td>
-													 <td>Machine Learning</td>
-													 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-													 <td>05-11-2016</td>
-
-													 <tr>
-
-														 <tr>
-
-															 <td>98-45-123945</td>
-															 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-															 <td>Sheena Angra
-				Chitkara University, India
-				<br>
-				Sachin Ahuja
-				CURIN, Chitkara University, India</td>
-															 <td>Machine Learning</td>
-															 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-															 <td>05-11-2016</td>
-
-															 <tr>
-
-
-																 <tr>
-
-																	 <td>98-45-123945</td>
-																	 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-																	 <td>Sheena Angra
-						Chitkara University, India
-						<br>
-						Sachin Ahuja
-						CURIN, Chitkara University, India</td>
-																	 <td>Machine Learning</td>
-																	 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-																	 <td>05-11-2016</td>
-
-																	 <tr>
-
-
-																		 <tr>
-
-																			 <td>98-45-123945</td>
-																			 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-																			 <td>Sheena Angra
-								Chitkara University, India
-								<br>
-								Sachin Ahuja
-								CURIN, Chitkara University, India</td>
-																			 <td>Machine Learning</td>
-																			 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-																			 <td>05-11-2016</td>
-
-																			 <tr>
-
-
-																				 <tr>
-
-																					 <td>98-45-123945</td>
-																					 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-																					 <td>Sheena Angra
-										Chitkara University, India
-										<br>
-										Sachin Ahuja
-										CURIN, Chitkara University, India</td>
-																					 <td>Machine Learning</td>
-																					 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-																					 <td>05-11-2016</td>
-
-																					 <tr>
-
-
-																						 <tr>
-
-																							 <td>98-45-123945</td>
-																							 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-																							 <td>Sheena Angra
-												Chitkara University, India
-												<br>
-												Sachin Ahuja
-												CURIN, Chitkara University, India</td>
-																							 <td>Machine Learning</td>
-																							 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-																							 <td>05-11-2016</td>
-
-																							 <tr>
-
-
-																								 <tr>
-
-																									 <td>98-45-123945</td>
-																									 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-																									 <td>Sheena Angra
-														Chitkara University, India
-														<br>
-														Sachin Ahuja
-														CURIN, Chitkara University, India</td>
-																									 <td>Machine Learning</td>
-																									 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-																									 <td>05-11-2016</td>
-
-																									 <tr>
 									</tbody>
 								</table>
 
