@@ -38,6 +38,17 @@ public class HomeController
         return new ModelAndView("faq.jsp");
     }
 
+
+    @RequestMapping("/progress")
+    public ModelAndView progress(){
+        return new ModelAndView("progress.jsp");
+    }
+
+    @RequestMapping("/new_submissions")
+    public ModelAndView submissions(){
+        return new ModelAndView("new_sub.jsp");
+    }
+
     @RequestMapping("/statistics")
     public ModelAndView statistics(){
         return new ModelAndView("statistics.jsp");
@@ -81,7 +92,7 @@ public class HomeController
     {
         ModelAndView mv = new ModelAndView("student_dash.jsp");
         String s = (String)session.getAttribute("user_email");
-        Login st = login_repo.findById("sidharthrajagopal1123@gmail.com").orElse(new Login());
+        Login st = login_repo.findById("sivasininetrasa@gmail.com").orElse(new Login());
         Iterable<Paper> paper= paper_repo.findAll();
         Iterator<Paper> paperIterator = paper.iterator();
         ArrayList<Paper> student_papers = new ArrayList<Paper>();
