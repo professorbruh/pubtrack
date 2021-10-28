@@ -29,6 +29,21 @@ public class HomeController
         return mv;
     }
 
+    @RequestMapping("/faq")
+    public ModelAndView faq(){
+        return new ModelAndView("faq.jsp");
+    }
+
+    @RequestMapping("/statistics")
+    public ModelAndView statistics(){
+        return new ModelAndView("statistics.jsp");
+    }
+
+    @RequestMapping("/status")
+    public ModelAndView status(){
+        return new ModelAndView("status.jsp");
+    }
+
     @RequestMapping("login")
     public ModelAndView login(HttpSession session)
     {
