@@ -20,6 +20,10 @@ public class HomeController
 
     @Autowired
     PaperRepo paper_repo;
+
+    @Autowired
+    EditorRepo editor_repo;
+
     @RequestMapping()
     public ModelAndView home(String name, HttpSession session)
     {
@@ -98,6 +102,23 @@ public class HomeController
     public ModelAndView publisher_login(HttpSession session)
     {
         ModelAndView mv = new ModelAndView("status.jsp");
+        Iterable<Paper> paper= paper_repo.findAll();
+        Iterator<Paper> paperIterator = paper.iterator();
+        ArrayList<Paper> student_papers = new ArrayList<Paper>();
+        while(paperIterator.hasNext())
+        {
+            Paper p = paperIterator.next();
+            
+            if(p.getStatus()==5)
+            {   
+                student_papers.add(p);
+            }
+        }
+        mv.addObject("papers", student_papers);
+        for(int i=0;i<student_papers.size();i++)
+        {
+            System.out.println(student_papers.get(i));
+        }
         return mv;
     }
     @RequestMapping("reviewer_dashboard")

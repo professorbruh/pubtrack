@@ -216,55 +216,7 @@
                             </div>
                         </div>
                         </c:forEach>
-                        <div class="card-body">
-                            <h6>Paper ID: OD45345345435</h6>
-                            <article class="card">
-                                <div class="card-body row">
-                                    <div class="col"> <strong>Author:</strong> <br> John Doe</div>
-                                    <div class="col"> <strong>Status:</strong> <br> Rejected </div>
-                                    <div class="col"> <strong>Reason:</strong> <br> Duplication of Topic </div>
-                                    <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
-                                </div>
-                                
-                            </article>
-                            <div class="track">
-                                <div class="step rejected"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
-                                <div class="step rejected"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text"> Stage 2</span> </div>
-                                <div class="step rejected"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 3</span> </div>
-                                <div class="step rejected"><a data-toggle="collapse" href="#c2" role="button" aria-expanded="false" aria-controls="c2"><span class="icon"><i class="fa fa-check-circle"></i> </span> <span class="text">Stage 4</span> </a></div>
-                                <div class="step rejected"> <span class="icon"> <i class="fa fa-times-circle"></i> </span> <span class="text">Stage 5</span> </div>
-                            </div>
-                            <hr>
-                            <div class="collapse" id="c2">
-                                <div class="card card-body">
-                                    Comments
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h6>Paper ID: OD45345345435</h6>
-                            <article class="card">
-                                <div class="card-body row">
-                                    <div class="col"> <strong>Author:</strong> <br> John Doe</div>
-                                    <div class="col"> <strong>Status:</strong> <br> Published </div>
-                                    <div class="col"> <strong>Reason:</strong> <br> - </div>
-                                    <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
-                                </div>
-                            </article>
-                            <div class="track">
-                                <div class="step pub"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
-                                <div class="step pub"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text"> Stage 2</span> </div>
-                                <div class="step pub"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 3</span> </div>
-                                <div class="step pub"> <a data-toggle="collapse" href="#c3" role="button" aria-expanded="false" aria-controls="c3"><span class="icon"><i class="fa fa-check-circle"></i> </span> <span class="text">Stage 4</span> </a> </div>
-                                <div class="step pub"> <span class="icon"> <i class="fa fa-trophy"></i> </span> <span class="text">Stage 5</span> </div>
-                            </div>
-                            <hr>
-                            <div class="collapse" id="c3">
-                                <div class="card card-body">
-                                    Comments
-                                </div>
-                            </div>
-                        </div>
+                        
                 </div>
 
 
