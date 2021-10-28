@@ -2,13 +2,22 @@ package com.pubtrack.pubtrack;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.MapsId;
 import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 @Entity
 public class Login {
     @Id
     private String email;
     private String user_type;
     private String password;
+    @OneToOne(mappedBy = "login",cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
+    private Student student;
+
+    
+
 
 
     /**
@@ -51,6 +60,20 @@ public class Login {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * @return Student return the student
+     */
+    public Student getStudent() {
+        return student;
+    }
+
+    /**
+     * @param student the student to set
+     */
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
 }

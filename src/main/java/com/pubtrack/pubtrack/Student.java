@@ -5,34 +5,43 @@ import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.MapsId;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 @Entity
 public class Student {
     @Id
-    @Column(name="student_id")
-    private int ref_id;
-    private String name;
     private String email;
-    @Column(name="academic_year")
+    private String name;
     private String academic_year;
     private String branch;
     @OneToMany
     private Set<Student> student = new HashSet<>();
-    protected Student() {}
+    @OneToOne
+    @MapsId
+    @JoinColumn(name = "email")
+    private Login login;
     
 
+
+  
+
+
+
     /**
-     * @return int return the ref_id
+     * @return String return the email
      */
-    public int getRef_id() {
-        return ref_id;
+    public String getEmail() {
+        return email;
     }
 
     /**
-     * @param ref_id the ref_id to set
+     * @param email the email to set
      */
-    public void setRef_id(int ref_id) {
-        this.ref_id = ref_id;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     /**
@@ -77,19 +86,32 @@ public class Student {
         this.branch = branch;
     }
 
-
     /**
-     * @return String return the email
+     * @return Set<Student> return the student
      */
-    public String getEmail() {
-        return email;
+    public Set<Student> getStudent() {
+        return student;
     }
 
     /**
-     * @param email the email to set
+     * @param student the student to set
      */
-    public void setEmail(String email) {
-        this.email = email;
+    public void setStudent(Set<Student> student) {
+        this.student = student;
+    }
+
+    /**
+     * @return Login return the login
+     */
+    public Login getLogin() {
+        return login;
+    }
+
+    /**
+     * @param login the login to set
+     */
+    public void setLogin(Login login) {
+        this.login = login;
     }
 
 }

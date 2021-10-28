@@ -192,8 +192,11 @@
                                 <div class="card-body row">
                                     <div class="col"> <strong>Author:</strong> <br> John Doe</div>
                                     <div class="col"> <strong>Status:</strong> <br> Stage 2 </div>
+                                    <!--
                                     <div class="col"> <strong>Reason:</strong> <br> - </div>
+                                    
                                     <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
+                                    -->
                                 </div>
                             </article>
                             <div class="track">

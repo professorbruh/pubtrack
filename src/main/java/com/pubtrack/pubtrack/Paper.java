@@ -31,7 +31,7 @@ public class Paper {
     @PrimaryKeyJoinColumn
     private Published published;
     @ManyToOne
-    @JoinColumn(name = "student_id")
+    @JoinColumn(name = "email")
     private Student student;
 
 
