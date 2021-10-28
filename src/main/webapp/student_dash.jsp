@@ -193,7 +193,7 @@
                             <article class="card">
                                 <div class="card-body row">
                                     <div class="col"> <strong>Author:</strong> <br> ${p.student.name}</div>
-                                    <div class="col"> <strong>Status:</strong> <br> Stage 2 </div>
+                                    <div class="col"> <strong>Status:</strong> <br> ${p.status}</div>
                                     <!--
                                     <div class="col"> <strong>Reason:</strong> <br> - </div>
                                     
@@ -202,11 +202,53 @@
                                 </div>
                             </article>
                             <div class="track">
+                            <c:choose>  
+                            <c:when test="${p.status==1}">
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
+                                <div class="step"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text"> Stage 2</span> </div>
+                                <div class="step"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 3</span> </div>
+                                <div class="step"><a data-toggle="collapse" href="#c1" role="button" aria-expanded="false" aria-controls="c1"><span class="icon"><i class="fa fa-check-circle"></i> </span> <span class="text">Stage 4</span> </a></div>
+                                <div class="step"> <span class="icon"> <i class="fa fa-trophy"></i> </span> <span class="text">Stage 5</span> </div>
+
+                            </c:when> 
+                            
+                            <c:when test="${p.status==2}">
                                 <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
                                 <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text"> Stage 2</span> </div>
                                 <div class="step"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 3</span> </div>
                                 <div class="step"><a data-toggle="collapse" href="#c1" role="button" aria-expanded="false" aria-controls="c1"><span class="icon"><i class="fa fa-check-circle"></i> </span> <span class="text">Stage 4</span> </a></div>
                                 <div class="step"> <span class="icon"> <i class="fa fa-trophy"></i> </span> <span class="text">Stage 5</span> </div>
+
+                            </c:when>
+
+                            <c:when test="${p.status==3}">
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text"> Stage 2</span> </div>
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 3</span> </div>
+                                <div class="step"><a data-toggle="collapse" href="#c1" role="button" aria-expanded="false" aria-controls="c1"><span class="icon"><i class="fa fa-check-circle"></i> </span> <span class="text">Stage 4</span> </a></div>
+                                <div class="step"> <span class="icon"> <i class="fa fa-trophy"></i> </span> <span class="text">Stage 5</span> </div>
+
+                            </c:when>
+
+                            <c:when test="${p.status==4}">
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text"> Stage 2</span> </div>
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 3</span> </div>
+                                <div class="step active"><a data-toggle="collapse" href="#c1" role="button" aria-expanded="false" aria-controls="c1"><span class="icon"><i class="fa fa-check-circle"></i> </span> <span class="text">Stage 4</span> </a></div>
+                                <div class="step"> <span class="icon"> <i class="fa fa-trophy"></i> </span> <span class="text">Stage 5</span> </div>
+
+                            </c:when>
+
+                            <c:when test="${p.status==5}">
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text"> Stage 2</span> </div>
+                                <div class="step active"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 3</span> </div>
+                                <div class="step active"><a data-toggle="collapse" href="#c1" role="button" aria-expanded="false" aria-controls="c1"><span class="icon"><i class="fa fa-check-circle"></i> </span> <span class="text">Stage 4</span> </a></div>
+                                <div class="step active"> <span class="icon"> <i class="fa fa-trophy"></i> </span> <span class="text">Stage 5</span> </div>
+
+                            </c:when>
+                        </c:choose>  
+
                             </div>
                             <hr>
                             <div class="collapse" id="c1">
