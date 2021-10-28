@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import javax.servlet.http.HttpSession;
 @Controller
@@ -64,12 +65,18 @@ public class HomeController
         Login st = login_repo.findById("sidharthrajagopal1123@gmail.com").orElse(new Login());
         Iterable<Paper> paper= paper_repo.findAll();
         Iterator<Paper> paperIterator = paper.iterator();
+        ArrayList<Paper> student_papers = new ArrayList<Paper>();
         while(paperIterator.hasNext())
         {
             Paper p = paperIterator.next();
-            System.out.println(p.getRef_id());
+            
+            if(p.getStudent().getEmail().equals(st.getEmail()))
+            {
+                student_papers.add(p);
+            }
         }
-
+        
+        mv.addObject("papers", student_papers);
         return mv;
     }
     @RequestMapping("publisher_dashboard")

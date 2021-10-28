@@ -38,6 +38,7 @@ public class Paper {
 
 
 
+
     /**
      * @return String return the ref_id
      */
@@ -176,6 +177,20 @@ public class Paper {
      */
     public void setPublished(Published published) {
         this.published = published;
+    }
+
+    /**
+     * @return Student return the student
+     */
+    public Student getStudent() {
+        return student;
+    }
+
+    /**
+     * @param student the student to set
+     */
+    public void setStudent(Student student) {
+        this.student = student;
     }
 
 }

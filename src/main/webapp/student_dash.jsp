@@ -213,6 +213,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="card-body">
                             <h6>Paper ID: OD45345345435</h6>
                             <article class="card">
@@ -222,6 +223,7 @@
                                     <div class="col"> <strong>Reason:</strong> <br> Duplication of Topic </div>
                                     <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
                                 </div>
+                                
                             </article>
                             <div class="track">
                                 <div class="step rejected"> <span class="icon"> <i class="fa fa-check-circle"></i> </span> <span class="text">Stage 1</span> </div>
@@ -245,6 +247,10 @@
                                     <div class="col"> <strong>Status:</strong> <br> Published </div>
                                     <div class="col"> <strong>Reason:</strong> <br> - </div>
                                     <div class="col"> <strong>Tracking #:</strong> <br> BD045903594059 </div>
+                                    <c:forEach items="${papers}" var = "p">
+                                ${p.ref_id}
+                                <td></td>
+                                </c:forEach>
                                 </div>
                             </article>
                             <div class="track">
