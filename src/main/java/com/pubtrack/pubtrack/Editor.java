@@ -30,6 +30,8 @@ public class Editor {
    
 
 
+    
+
     /**
      * @return String return the pub_id
      */
@@ -101,16 +103,16 @@ public class Editor {
     }
 
     /**
-     * @return Login return the email
+     * @return String return the email
      */
-    public Login getEmail() {
+    public String getEmail() {
         return email;
     }
 
     /**
      * @param email the email to set
      */
-    public void setEmail(Login email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
