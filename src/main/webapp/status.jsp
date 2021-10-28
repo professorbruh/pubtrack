@@ -134,9 +134,9 @@
 				<div class="card">
 					<div class="card-header">
             <ul class="nav nav-pills nav-justified">
-    <li class="active" style="font-size:1.2rem;"><a href="status.html">Published</a></li>
-    <li><a href="progress.html" style="font-size:1.2rem">In Progress</a></li>
-    <li><a href="new_sub.html" style="font-size:1.2rem">New submissions</a></li>
+    <li class="active" style="font-size:1.2rem;"><a href="/status">Published</a></li>
+    <li><a href="/progress" style="font-size:1.2rem">In Progress</a></li>
+    <li><a href="/new_submissions" style="font-size:1.2rem">New submissions</a></li>
   </ul>
  </div>
 
@@ -161,7 +161,7 @@
 
 								</thead>
 								<tbody>
-                                        <c:forEach var="published" items="${published}"></c:forEach>
+                                        <c:forEach var="published" items="${published}">
 										 <tr>
 
 											 <td>12344</td>
@@ -176,7 +176,7 @@ CURIN, Chitkara University, India</td>
 											 <td>05-11-2016</td>
 
 											 <tr>
-												 </tr>c:forEach>
+												 </tr><c:forEach>
 
 
 									</tbody>
@@ -196,4 +196,3 @@ CURIN, Chitkara University, India</td>
 
 </body>
 </html>
- 
