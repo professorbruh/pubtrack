@@ -42,7 +42,7 @@
             <div class="logo">PUBTRACK</div>
             <div class="menu">
                 <ul>
-                    <li><a href="#" class="active">Login</a></li>
+                    <li><a href="/login">Login</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Motto</a></li>
                     <li><a href="#">Contact us</a></li>
