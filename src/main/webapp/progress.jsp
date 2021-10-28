@@ -128,9 +128,9 @@
 				<div class="card">
 					<div class="card-header">
             <ul class="nav nav-pills nav-justified">
-    <li style="font-size:1.2rem"><a href="status.html">Published</a></li>
-    <li  class="active"><a href="progress.html" style="font-size:1.2rem">In Progress</a></li>
-    <li><a href="new_sub.html" style="font-size:1.2rem">New submissions</a></li>
+    <li style="font-size:1.2rem"><a href="/status">Published</a></li>
+    <li  class="active"><a href="/progress" style="font-size:1.2rem">In Progress</a></li>
+    <li><a href="/new_submissions" style="font-size:1.2rem">New submissions</a></li>
   </ul>
  </div>
 
