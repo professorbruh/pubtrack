@@ -54,6 +54,48 @@
             <p>The one stop for publishing your article.</p>
         </div>
 </div>
+<div class="container color">
+    <div class="text">
+        <h1>Upcoming Conferences</h1>
+    </div>
+    <div class="Row " >
+        <div class="column w3-padding">  
+            <div class=" c-cd w3-hover-shadow w3-padding-64 w3-center" style="width:100%">
+                    <span><i class="fa fa-calendar-check-o " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">23 Oct 2021</span>
+                    <h3>Conference Info</h3>
+                    <span><i class="fa fa-location-arrow " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">Location</span>
+            </div>
+        </div>
+        <div class="column w3-padding">  
+            <div class=" c-cd w3-hover-shadow w3-padding-64 w3-center" style="width:100%">
+                    <span><i class="fa fa-calendar-check-o " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">23 Oct 2021</span>
+                    <h3>Conference Info</h3>
+                    <span><i class="fa fa-location-arrow " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">Location</span>
+            </div>
+        </div>
+        <div class="column w3-padding">  
+            <div class=" c-cd w3-hover-shadow w3-padding-64 w3-center" style="width:100%">
+                    <span><i class="fa fa-calendar-check-o " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">23 Oct 2021</span>
+                    <h3>Conference Info</h3>
+                    <span><i class="fa fa-location-arrow " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">Location</span>
+            </div>
+        </div>
+        <div class="column w3-padding">  
+            <div class=" c-cd w3-hover-shadow w3-padding-64 w3-center" style="width:100%">
+                    <span><i class="fa fa-calendar-check-o " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">23 Oct 2021</span>
+                    <h3>Conference Info</h3>
+                    <span><i class="fa fa-location-arrow " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">Location</span>
+            </div>
+        </div>
+        <div class="column w3-padding">  
+            <div class=" c-cd w3-hover-shadow w3-padding-64 w3-center" style="width:100%">
+                    <span><i class="fa fa-calendar-check-o " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">23 Oct 2021</span>
+                    <h3>Conference Info</h3>
+                    <span><i class="fa fa-location-arrow " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">Location</span>
+            </div>
+        </div>
+        </div>
+    </div>
   <div class="container">
         <div class="text">
             <h1>Our users include</h1>
@@ -76,21 +118,7 @@
             </div>
         </div>
     </div>
-    <div class="container color">
-        <div class="text">
-            <h1>Upcoming Conferences</h1>
-        </div>
-        <div class="Row " >
-            <div class="column w3-padding">  
-                <div class=" c-cd w3-hover-shadow w3-padding-64 w3-center" style="width:100%">
-                        <i class="fa fa-calendar-check-o " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"><h6>23 Oct 2021</h6></i>
-                        <h3>Conference Info</h3>
-                        <span><i class="fa fa-location-arrow " style="font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;"></i></span><span style = "font-size:20px;color:lightsalmon;padding-left:10px;align-content:left;">Location</span>
-                </div>
-            </div>
-            
-            </div>
-        </div>                      
+                          
     </div>
     </div>
 </body>
