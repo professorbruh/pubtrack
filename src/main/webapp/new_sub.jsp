@@ -166,7 +166,7 @@ Chitkara University, India
 Sachin Ahuja
 CURIN, Chitkara University, India</td>
 											 <td style="text-align:center;">Machine Learning</td>
-											 <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+											 <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 											 <tr>
 
@@ -180,8 +180,8 @@ CURIN, Chitkara University, India</td>
     Sachin Ahuja
     CURIN, Chitkara University, India</td>
                           <td style="text-align:center;">Machine Learning</td>
-                          <td style="text-align:center;">Stage 2<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-    <td style="text-align:center"><a href='allot_reviewers.html'><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+                          <td style="text-align:center;">Stage 2<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+    <td style="text-align:center"><a href='/allot_reviewers'><i class="fa fa-plus" aria-hidden="true"></i></a></td>
                           <tr>
 
                             <tr>
@@ -193,7 +193,7 @@ CURIN, Chitkara University, India</td>
        Sachin Ahuja
        CURIN, Chitkara University, India</td>
                               <td style="text-align:center;">Machine Learning</td>
-                              <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                              <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                               <tr>
 
@@ -207,7 +207,7 @@ CURIN, Chitkara University, India</td>
            Sachin Ahuja
            CURIN, Chitkara University, India</td>
                                   <td style="text-align:center;">Machine Learning</td>
-                                  <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                  <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                                   <tr>
 
@@ -222,8 +222,8 @@ CURIN, Chitkara University, India</td>
                Sachin Ahuja
                CURIN, Chitkara University, India</td>
                                       <td style="text-align:center;">Machine Learning</td>
-                                      <td style="text-align:center;">Stage 2<a href="update_status12.html"><br><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                                        <td style="text-align:center"><a href='allot_reviewers.html'><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+                                      <td style="text-align:center;">Stage 2<a href="/update_status12"><br><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                        <td style="text-align:center"><a href='/allot_reviewers'><i class="fa fa-plus" aria-hidden="true"></i></a></td>
 
                                       <tr>
 
@@ -236,7 +236,7 @@ CURIN, Chitkara University, India</td>
                    Sachin Ahuja
                    CURIN, Chitkara University, India</td>
                                           <td style="text-align:center;">Machine Learning</td>
-                                          <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                          <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                                           <tr>
 
@@ -249,7 +249,7 @@ CURIN, Chitkara University, India</td>
                        Sachin Ahuja
                        CURIN, Chitkara University, India</td>
                                               <td style="text-align:center;">Machine Learning</td>
-                                              <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                              <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                                               <tr>
 
@@ -262,7 +262,7 @@ CURIN, Chitkara University, India</td>
                            Sachin Ahuja
                            CURIN, Chitkara University, India</td>
                                                   <td style="text-align:center;">Machine Learning</td>
-                                                  <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                                  <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                                                   <tr>
 
@@ -276,7 +276,7 @@ CURIN, Chitkara University, India</td>
                                Sachin Ahuja
                                CURIN, Chitkara University, India</td>
                                                       <td style="text-align:center;">Machine Learning</td>
-                                                      <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                                      <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                                                       <tr>
 
@@ -290,7 +290,7 @@ CURIN, Chitkara University, India</td>
                                    Sachin Ahuja
                                    CURIN, Chitkara University, India</td>
                                                           <td style="text-align:center;">Machine Learning</td>
-                                                          <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                                          <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                                                           <tr>
 
@@ -304,7 +304,7 @@ CURIN, Chitkara University, India</td>
                                        Sachin Ahuja
                                        CURIN, Chitkara University, India</td>
                                                               <td style="text-align:center;">Machine Learning</td>
-                                                              <td style="text-align:center;">Stage 1<a href="update_status12.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                                              <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
                                                               <tr>
 

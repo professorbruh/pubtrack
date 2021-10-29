@@ -161,7 +161,7 @@
 
 								</thead>
 								<tbody>
-                                        <c:forEach var="published" items="${published}">
+                            
 										 <tr>
 
 											 <td>12344</td>
@@ -176,7 +176,7 @@ CURIN, Chitkara University, India</td>
 											 <td>05-11-2016</td>
 
 											 <tr>
-												 </tr><c:forEach>
+												 </tr>
 
 
 									</tbody>

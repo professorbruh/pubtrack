@@ -165,8 +165,8 @@ Chitkara University, India
 Sachin Ahuja
 CURIN, Chitkara University, India</td>
 											 <td style="text-align:center;">Machine Learning</td>
-											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                       <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                       <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 										 </tr>
 
@@ -179,8 +179,8 @@ CURIN, Chitkara University, India</td>
     Sachin Ahuja
     CURIN, Chitkara University, India</td>
     											 <td style="text-align:center;">Machine Learning</td>
-    											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                           <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+    											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                           <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 												 </tr>
                              <tr>
@@ -192,8 +192,8 @@ CURIN, Chitkara University, India</td>
         Sachin Ahuja
         CURIN, Chitkara University, India</td>
         											 <td style="text-align:center;">Machine Learning</td>
-        											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                               <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+        											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                               <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 														 </tr>
 
@@ -206,8 +206,8 @@ CURIN, Chitkara University, India</td>
             Sachin Ahuja
             CURIN, Chitkara University, India</td>
             											 <td style="text-align:center;">Machine Learning</td>
-            											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                                   <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+            											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                                   <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 																 </tr>
 
@@ -220,8 +220,8 @@ CURIN, Chitkara University, India</td>
                 Sachin Ahuja
                 CURIN, Chitkara University, India</td>
                 											 <td style="text-align:center;">Machine Learning</td>
-                											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                                       <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                                       <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 																		 </tr>
 
@@ -234,8 +234,8 @@ CURIN, Chitkara University, India</td>
                     Sachin Ahuja
                     CURIN, Chitkara University, India</td>
                     											 <td style="text-align:center;">Machine Learning</td>
-                    											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                                           <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                    											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                                           <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 																				 </tr>
 
@@ -249,8 +249,8 @@ CURIN, Chitkara University, India</td>
                         Sachin Ahuja
                         CURIN, Chitkara University, India</td>
                         											 <td style="text-align:center;">Machine Learning</td>
-                        											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                                               <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                        											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                                               <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 																						 </tr>
 
@@ -264,8 +264,8 @@ CURIN, Chitkara University, India</td>
                             Sachin Ahuja
                             CURIN, Chitkara University, India</td>
                             											 <td style="text-align:center;">Machine Learning</td>
-                            											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                                                   <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                            											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                                                   <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 																								 </tr>
 
@@ -278,8 +278,8 @@ CURIN, Chitkara University, India</td>
                                 Sachin Ahuja
                                 CURIN, Chitkara University, India</td>
                                 											 <td style="text-align:center;">Machine Learning</td>
-                                											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='comments.html'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                                                       <td style="text-align:center;">Stage 4<a href="update_status35.html"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+                                											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+                                                       <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 																										 </tr>
 

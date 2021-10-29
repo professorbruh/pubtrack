@@ -115,26 +115,20 @@
                     <ul id="sidebarnav">
                         <!-- User Profile-->
                         <li class="sidebar-item pt-2">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="student_dash.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/student_dash"
                                 aria-expanded="false">
                                 <i class="fas fa-tv" aria-hidden="true"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="submit_paper.html"
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/submit_paper"
                                 aria-expanded="false">
                                 <i class=" fas fa-edit" aria-hidden="true"></i>
                                 <span class="hide-menu">Submit Paper</span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="stud_profile.html"
-                                aria-expanded="false">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span class="hide-menu">Profile</span>
-                            </a>
-                        </li>
+                    
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark sidebar-link" href="#"
                                 aria-expanded="false">
