@@ -137,7 +137,7 @@
 
 
 					<div class="card-content">
-						<p style="font-size:1.2rem;"> The articles below are in progress from stages 3 to 5:</p>
+						<p style="font-size:1.2rem;"> The articles below are in progress from stages 3 to 4:</p>
 						<table class='sortable'>
 								<thead>
 									<tr>
