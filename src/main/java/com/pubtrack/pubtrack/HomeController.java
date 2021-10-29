@@ -84,6 +84,21 @@ public class HomeController
         return new ModelAndView("allot_reviewers.jsp");
     }
 
+    @RequestMapping("/reviewer_add_comments")
+    public ModelAndView reviewer_add_comments(){
+        return new ModelAndView("reviewer_add_comments.jsp");
+    }
+
+    @RequestMapping("/reviewer_edit_comments")
+    public ModelAndView reviewer_edit_comments(){
+        return new ModelAndView("reviewer_edit_comments.jsp");
+    }
+
+    @RequestMapping("/profile")
+    public ModelAndView profile(){
+        return new ModelAndView("profile.jsp");
+    }
+
 
     @RequestMapping("login")
     public ModelAndView login(HttpSession session)

@@ -175,7 +175,35 @@ CURIN, Chitkara University, India</td>
 											 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
 											 <td>05-11-2016</td>
 
-											 <tr>
+												 </tr>
+									<tr>
+
+											 <td>12344</td>
+											 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
+											 <td>Sheena Angra
+Chitkara University, India
+<br>
+Sachin Ahuja
+CURIN, Chitkara University, India</td>
+											 <td>Machine Learning</td>
+											 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
+											 <td>05-11-2016</td>
+
+												 </tr>
+									
+									<tr>
+
+											 <td>12344</td>
+											 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
+											 <td>Sheena Angra
+Chitkara University, India
+<br>
+Sachin Ahuja
+CURIN, Chitkara University, India</td>
+											 <td>Machine Learning</td>
+											 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
+											 <td>05-11-2016</td>
+
 												 </tr>
 
 
