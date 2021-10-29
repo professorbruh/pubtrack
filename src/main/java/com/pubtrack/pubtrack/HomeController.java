@@ -135,7 +135,7 @@ public class HomeController
     @RequestMapping("reviewer_dashboard")
     public ModelAndView reviewer_login(HttpSession session)
     {
-        ModelAndView mv = new ModelAndView("homepage.jsp");
+        ModelAndView mv = new ModelAndView("reviewer_dash.jsp");
         return mv;
     }
     @RequestMapping("admin_dashboard")
