@@ -129,7 +129,7 @@
 											 <td><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
 											 <td>Indian Institute of Computer Science</td>
 											 <td>Justification of problem statement must be clear</td>
-											 <td style="text-align:center;"><a href="reviewer_edit_comments.html" class="comment bi bi-pencil-fill edit"></a>
+											 <td style="text-align:center;"><a href="/reviewer_edit_comments" class="comment bi bi-pencil-fill edit"></a>
 												 <a href="#" class="comment bi bi-x-circle-fill close"></a></td>
 
 
@@ -141,8 +141,8 @@
 													 <td>2</td>
 													 <td><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
 													 <td>Indian Institute of Computer Science</td>
-													 <td style="text-align:center;"><a href="reviewer_add_comments.html" class="comment bi bi-plus-circle-fill add-fill add"></a></td>
-													 <td style="text-align:center;"><a href="reviewer_edit_comments.html" class="comment bi bi-pencil-fill edit">
+													 <td style="text-align:center;"><a href="/reviewer_add_comments" class="comment bi bi-plus-circle-fill add-fill add"></a></td>
+													 <td style="text-align:center;"><a href="/reviewer_edit_comments" class="comment bi bi-pencil-fill edit">
 													 </a>
 													 <a href="#" class="comment bi bi-x-circle-fill close"></a></td>
 
@@ -152,7 +152,7 @@
 															 <td><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
 															 <td>Indian Institute of Computer Science</td>
 															 <td>Justification of problem statement must be clear</td>
-															 <td style="text-align:center;"><a href="reviewer_edit_comments.html" class="comment bi bi-pencil-fill edit"></a>
+															 <td style="text-align:center;"><a href="/reviewer_edit_comments" class="comment bi bi-pencil-fill edit"></a>
 																 <a href="#" class="comment bi bi-x-circle-fill close"></a></td>
 
 															 <tr>
@@ -164,7 +164,7 @@
 																	 <td><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
 																	 <td>Indian Institute of Computer Science</td>
 																	 <td>Justification of problem statement must be clear</td>
-																	 <td style="text-align:center;"><a href="reviewer_edit_comments.html" class="comment bi bi-pencil-fill edit"></a>
+																	 <td style="text-align:center;"><a href="/reviewer_edit_comments" class="comment bi bi-pencil-fill edit"></a>
 																		 <a href="#" class="comment bi bi-x-circle-fill close"></a></td>
 
 																	 <tr>
@@ -177,7 +177,7 @@
 																			 <td>Indian Institute of Computer Science</td>
 																			 <td>Justification of problem statement must be clear</td>
 																			 <td style="text-align:center;">
-																				 <a href="reviewer_edit_comments.html" class="comment bi bi-pencil-fill edit"></a>
+																				 <a href="/reviewer_edit_comments" class="comment bi bi-pencil-fill edit"></a>
 																				 <a href="#" class="comment bi bi-x-circle-fill close"></a></td>
 
 																			 <tr>
@@ -188,8 +188,8 @@
 																					 <td>6</td>
 																					 <td><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
 																					 <td>Indian Institute of Computer Science</td>
-																					 <td style="text-align:center;"><a href="reviewer_add_comments.html" class="comment bi bi-plus-circle-fill add-fill add"></a></td>
-																					 <td style="text-align:center;"><a href="reviewer_edit_comments.html" class="comment bi bi-pencil-fill edit">
+																					 <td style="text-align:center;"><a href="/reviewer_add_comments" class="comment bi bi-plus-circle-fill add-fill add"></a></td>
+																					 <td style="text-align:center;"><a href="/reviewer_edit_comments" class="comment bi bi-pencil-fill edit">
 																					 </a>
 																					 <a href="#" class="comment bi bi-x-circle-fill close"></a></td>
 
