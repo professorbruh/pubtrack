@@ -59,6 +59,32 @@ public class HomeController
         return new ModelAndView("status.jsp");
     }
 
+    @RequestMapping("/submit_paper")
+    public ModelAndView submit_paper(){
+        return new ModelAndView("submit_paper.jsp");
+    }
+
+    @RequestMapping("/comments")
+    public ModelAndView comments(){
+        return new ModelAndView("comments.jsp");
+    }
+
+    @RequestMapping("/update_status12")
+    public ModelAndView update12(){
+        return new ModelAndView("update_status12.jsp");
+    }
+
+    @RequestMapping("/update_status35")
+    public ModelAndView update35(){
+        return new ModelAndView("update_status35.jsp");
+    }
+
+    @RequestMapping("/allot_reviewers")
+    public ModelAndView allot_reviewers(){
+        return new ModelAndView("allot_reviewers.jsp");
+    }
+
+
     @RequestMapping("login")
     public ModelAndView login(HttpSession session)
     {
