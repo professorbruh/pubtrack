@@ -98,19 +98,20 @@ public class HomeController
         {
             mv = student_login(session);
         }
-        if (st.getUser_type().equalsIgnoreCase("Publisher"))
+        else if (st.getUser_type().equalsIgnoreCase("Publisher"))
         {
             mv = publisher_login(session);
         }
-        if (st.getUser_type().equalsIgnoreCase("Reviewer"))
+        else if (st.getUser_type().equalsIgnoreCase("Reviewer"))
         {
             mv = reviewer_login(session);
         }
-        if (st.getUser_type().equalsIgnoreCase("Administrator"))
+        else if (st.getUser_type().equalsIgnoreCase("Administrator"))
         {
             mv = admin_login(session);
         }
         return mv;
+        
     }
     
     @RequestMapping("student_dash")
@@ -118,7 +119,7 @@ public class HomeController
     {
         ModelAndView mv = new ModelAndView("student_dash.jsp");
         String s = (String)session.getAttribute("user_email");
-        Login st = login_repo.findById("sivasininetrasa@gmail.com").orElse(new Login());
+        Login st = login_repo.findById("sidharthrajagopal1123@gmail.com").orElse(new Login());
         Iterable<Paper> paper= paper_repo.findAll();
         Iterator<Paper> paperIterator = paper.iterator();
         ArrayList<Paper> student_papers = new ArrayList<Paper>();
