@@ -112,19 +112,19 @@ public class HomeController
         System.out.println(st.getUser_type());
         if (st.getUser_type().equals("Student"))
         {
-            mv = student_login(session);
+            return new ModelAndView("redirect:student_dash");
         }
         else if (st.getUser_type().equalsIgnoreCase("Publisher"))
         {
-            mv = publisher_login(session);
+            return new ModelAndView("redirect:publisher_dashboard");
         }
         else if (st.getUser_type().equalsIgnoreCase("Reviewer"))
         {
-            mv = reviewer_login(session);
+            return new ModelAndView("redirect:reviewer_dash");
         }
         else if (st.getUser_type().equalsIgnoreCase("Administrator"))
         {
-            mv = admin_login(session);
+            return new ModelAndView("redirect:admin_dashboard");
         }
         return mv;
         
@@ -148,7 +148,6 @@ public class HomeController
                 student_papers.add(p);
             }
         }
-        
         mv.addObject("papers", student_papers);
         return mv;
     }
