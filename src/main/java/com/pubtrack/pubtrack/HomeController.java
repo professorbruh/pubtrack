@@ -110,13 +110,28 @@ public class HomeController
 
 
     @RequestMapping("login")
-    public ModelAndView login(HttpSession session)
+    public ModelAndView login(@RequestParam(name = "user", required = false)String username,@RequestParam(name = "pass", required = false)String pass,HttpSession session)
     {
         ModelAndView mv = new ModelAndView("login.jsp");
         Login nullval = new Login();
         nullval.setUser_type("Nothing");
         //Login st = login_repo.findById("sivasininetra@gmail.com").orElse(nullval);
-        Login st = login_repo.findById("sidharthrajagopal1123@gmail.com").orElse(nullval);
+        Login st;
+        if(username!=null)
+        {
+        st = login_repo.findById(username).orElse(nullval);
+        }
+        else
+        {
+            st = nullval;
+        }
+        if (st!=nullval)
+        {
+            if(!(st.getPassword().equals(pass)))
+            {
+                return mv;
+            }
+        }
         session.setAttribute("user_email", st.getEmail());
         System.out.println(st.getUser_type());
         if (st.getUser_type().equals("Student"))

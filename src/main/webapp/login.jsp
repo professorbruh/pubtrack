@@ -17,7 +17,7 @@
                 </form>
             </div>
             <div class="form-container sign-in-container">
-                <form name="myform1" method="POST">
+                <form name="myform1" action = "/login" method="POST">
                     <h1>Sign in</h1>
                     <input type="text" name="user" placeholder="Username" required="" />
                     <input type="password" name="pass" placeholder="Password" required="" />
