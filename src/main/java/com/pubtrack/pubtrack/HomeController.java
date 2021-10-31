@@ -106,6 +106,7 @@ public class HomeController
         ModelAndView mv = new ModelAndView("login.jsp");
         Login nullval = new Login();
         nullval.setUser_type("Nothing");
+        //Login st = login_repo.findById("sivasininetra@gmail.com").orElse(nullval);
         Login st = login_repo.findById("sidharthrajagopal1123@gmail.com").orElse(nullval);
         session.setAttribute("user_email", st.getEmail());
         System.out.println(st.getUser_type());
@@ -134,7 +135,7 @@ public class HomeController
     {
         ModelAndView mv = new ModelAndView("student_dash.jsp");
         String s = (String)session.getAttribute("user_email");
-        Login st = login_repo.findById("sidharthrajagopal1123@gmail.com").orElse(new Login());
+        Login st = login_repo.findById(s).orElse(new Login());
         Iterable<Paper> paper= paper_repo.findAll();
         Iterator<Paper> paperIterator = paper.iterator();
         ArrayList<Paper> student_papers = new ArrayList<Paper>();
