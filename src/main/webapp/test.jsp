@@ -1,11 +1,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
 <html>
 <body>
-<table>
- <c:forEach items="${papers}" var = "p">
-
-<td>${p.ref_id}</td>
-</c:forEach>
-</table>
+<form action="/test">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
 </body>
 </html>

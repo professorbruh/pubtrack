@@ -4,6 +4,7 @@ package com.pubtrack.pubtrack;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -24,6 +25,14 @@ public class HomeController
     @Autowired
     EditorRepo editor_repo;
 
+    @RequestMapping("test")
+    public ModelAndView testpage(@RequestParam(name = "fname", required = false)String fname,@RequestParam(name = "lname", required = false)String lname, HttpSession session)
+    {
+        ModelAndView mv = new ModelAndView("test.jsp");
+        System.out.println(fname + " "+ lname);
+        return mv;
+
+    }
     @RequestMapping()
     public ModelAndView home(String name, HttpSession session)
     {
