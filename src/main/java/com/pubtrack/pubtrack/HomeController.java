@@ -153,6 +153,12 @@ public class HomeController
         return mv;
         
     }
+    @RequestMapping("signup")
+    public ModelAndView signup(@RequestParam(name = "user", required = false)String username,@RequestParam(name = "pass", required = false)String pass,HttpSession session)
+    {
+        return new ModelAndView("admin_approval.jsp");
+    }
+
     
     @RequestMapping("student_dash")
     public ModelAndView student_login(HttpSession session)

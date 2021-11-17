@@ -6,7 +6,7 @@
     <body>
         <div class="container" id="container">
             <div class="form-container sign-up-container">
-                <form name="myform" action="../php/register.php" method="POST">
+                <form name="myform" action="/signup" method="POST">
                     <h1>Create Account</h1>
                     <input type="text" name="name" placeholder="Name" required="" />
                     <input type="email" name="email" placeholder="Email" required="" />
