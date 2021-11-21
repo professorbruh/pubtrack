@@ -214,6 +214,9 @@ public class HomeController
     public ModelAndView admin_login(HttpSession session)
     {
         ModelAndView mv = new ModelAndView("admin_dashboard.jsp");
+        String s = (String)session.getAttribute("user_email");
+        Login user = login_repo.findById(s).orElse(new Login());
+        mv.addObject("user", user);
         return mv;
     }
 }   

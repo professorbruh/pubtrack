@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +11,7 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="admin/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -58,7 +59,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <img src="admin/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Brad Diesel
@@ -74,7 +75,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="admin/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   John Pierce
@@ -90,7 +91,7 @@
           <a href="#" class="dropdown-item">
             <!-- Message Start -->
             <div class="media">
-              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <img src="admin/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
               <div class="media-body">
                 <h3 class="dropdown-item-title">
                   Nora Silvester
@@ -151,7 +152,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="#" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="admin/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">Admin Panel</span>
     </a>
 
@@ -183,14 +184,14 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="dashboard.html" class="nav-link active">
-              &nbsp;<img src = "dist/img/credit/4366352.png" height=20>
+              &nbsp;<img src = "admin/img/credit/4366352.png" height=20>
               <p>
                 &nbsp;Dashboard
               </p>
             </a>
             <li class="nav-item">
               <a href="users.html" class="nav-link">
-                &nbsp;<img src = "dist/img/credit/1984717.png" height=20>
+                &nbsp;<img src = "admin/img/credit/1984717.png" height=20>
                 <p>
                   &nbsp;Users
                 </p>
@@ -247,20 +248,20 @@
                 <div class="content-header">
                   
         <div class="inline">
-            <h5 class="font-weight-bold first">Username</h5>
-            <h5 class="second">sidharth_rajagopal1123</h5>
+            <h5 class="font-weight-bold first">Email</h5>
+            <h5 class="second"><c:out value="${user.email}"/>  </h5>
             <hr>
         </div>
 
         <div class="inline">
             <h5 class="font-weight-bold first">First Name</h5>
-            <h5 class="second">Sidharth</h5>
+            <h5 class="second">Jeev</h5>
             <hr>
         </div>
 
         <div class="inline">
             <h5 class="font-weight-bold first">Last Name</h5>
-            <h5 class="second">Rajagopal</h5>
+            <h5 class="second">SS</h5>
             <hr>
             
         </div>
@@ -289,17 +290,7 @@
   </aside>
   <!-- /.control-sidebar -->
 
-  <!-- Main Footer -->
-  <footer class="main-footer" style = "background-color:#343a40;">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Other footer
-    </div>
-    <!-- Default to the left -->
-    <strong>Insert footer here</strong>
-  </footer>
-</div>
-<!-- ./wrapper -->
+
 
 <!-- REQUIRED SCRIPTS -->
 
@@ -308,6 +299,6 @@
 <!-- Bootstrap 4 -->
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
+<script src="admin/js/adminlte.min.js"></script>
 </body>
 </html>
