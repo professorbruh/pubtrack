@@ -140,7 +140,7 @@ public class HomeController
         }
         session.setAttribute("user_email", st.getEmail());
         System.out.println(st.getUser_type());
-        if (st.getUser_type().equals("Student"))
+        if (st.getUser_type().equalsIgnoreCase("Student"))
         {
             return new ModelAndView("redirect:student_dash");
         }
@@ -187,13 +187,17 @@ public class HomeController
         mv.addObject("papers", student_papers);
         return mv;
     }
-    @RequestMapping("publisher_dashboard")
+    @RequestMapping("publisher_dashboard") //editor
     public ModelAndView publisher_login(HttpSession session)
     {
         ModelAndView mv = new ModelAndView("status.jsp");
         Iterable<Paper> paper= paper_repo.findAll();
         Iterator<Paper> paperIterator = paper.iterator();
         ArrayList<Paper> student_papers = new ArrayList<Paper>();
+        String s = (String)session.getAttribute("user_email");
+        System.out.println(s);
+        Editor user = editor_repo.findByEmail(s);
+        System.out.println(user);
         while(paperIterator.hasNext())
         {
             Paper p = paperIterator.next();
@@ -204,6 +208,7 @@ public class HomeController
             }
         }
         mv.addObject("papers", student_papers);
+        mv.addObject("editor", user);
         for(int i=0;i<student_papers.size();i++)
         {
             System.out.println(student_papers.get(i));
@@ -232,4 +237,5 @@ public class HomeController
         mv.addObject("user", user);
         return mv;
     }
+
 } 
