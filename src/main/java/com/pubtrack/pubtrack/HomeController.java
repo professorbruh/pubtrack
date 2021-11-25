@@ -144,7 +144,7 @@ public class HomeController
         }
         else if (st.getUser_type().equalsIgnoreCase("Reviewer"))
         {
-            return new ModelAndView("redirect:reviewer_dash");
+            return new ModelAndView("redirect:reviewer_dashboard");
         }
         else if (st.getUser_type().equalsIgnoreCase("Administrator"))
         {
@@ -219,4 +219,4 @@ public class HomeController
         mv.addObject("user", user);
         return mv;
     }
-}   
+} 
