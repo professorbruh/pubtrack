@@ -153,33 +153,16 @@
 								</thead>
 								<tbody>
 
-										 <tr>
-                      <td style="text-align:center;">PRID2334</td>
-											 <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-											 <td style="text-align:center;">Sheena Angra
-Chitkara University, India
-<br>
-Sachin Ahuja
-CURIN, Chitkara University, India</td>
-											 <td style="text-align:center;">Machine Learning</td>
-											 <td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-                       <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-										 </tr>
-										 <tr>
-											<c:forEach items="${papers}" var = "p">
-												<td style="text-align:center;">${p.ref_id}</td>
-												<td style="text-align:center;"><a href=${p.manuscript}>${p.title}</td>
-												<td style="text-align:center;">${p.student.name}</td>
-												<td style="text-align:center;">${p.domain}</td>
-												<td style="text-align:center;"><c:forEach items="${myMap['keystring']}" var = "m">${m.name}</c:forEach><a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-						  <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-										 </tr>
-										 
 										
-
-
-										</c:forEach>
+										 <c:forEach items="${papers}" var = "p">
+											 <tr>
+											<td style="text-align:center;">${p.ref_id}</td>
+											<td style="text-align:center;"><a href=${p.manuscript}>${p.title}</td>
+											<td style="text-align:center;">${p.student.name}</td>
+											<td style="text-align:center;">${p.domain}</td>
+											<td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+					  <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+									</c:forEach>
 
 
 									</tbody>
