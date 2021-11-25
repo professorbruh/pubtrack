@@ -50,7 +50,7 @@
 					<i class="fa fa-moon-o dark"></i>
 				</a>
 			</li>-->
-      <p> Indian Journal of Computer <br>Science and Technology</p>
+      <p>${editor.name}</p>
 
 			<li class="nav-item avt-wrapper">
 				<div class="avt dropdown">
@@ -146,7 +146,7 @@
 										<th width=20% style="font-weight:bold;text-align:center">Title</th>
 										<th style="font-weight:bold;text-align:center">Author(s)</th>
 										<th style="font-weight:bold;text-align:center">Domain</th>
-										<th style="font-weight:bold;text-align:center">Reviewers</th>
+										<th style="font-weight:bold;text-align:center">Comments</th>
                     <th style="font-weight:bold;text-align:center">Status</th>
 									</tr>
 
@@ -166,13 +166,16 @@ CURIN, Chitkara University, India</td>
                        <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 
 										 </tr>
-										 <c:forEach items="${papers}" var = "p">
-											<td style="text-align:center;">${p.ref_id}</td>
-											<td style="text-align:center;"><a href=${p.manuscript}>${p.title}</td>
-											<td style="text-align:center;">${p.student.name}</td>
-											<td style="text-align:center;">${p.domain}</td>
-											<td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-					  <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+										 <tr>
+											<c:forEach items="${papers}" var = "p">
+												<td style="text-align:center;">${p.ref_id}</td>
+												<td style="text-align:center;"><a href=${p.manuscript}>${p.title}</td>
+												<td style="text-align:center;">${p.student.name}</td>
+												<td style="text-align:center;">${p.domain}</td>
+												<td style="text-align:center;"><c:forEach items="${myMap['keystring']}" var = "m">${m.name}</c:forEach><a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+						  <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+										 </tr>
+										 
 										
 
 

@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.HashMap;
+import java.util.*;
 import javax.servlet.http.HttpSession;
 @Controller
 public class HomeController 
@@ -61,6 +62,8 @@ public class HomeController
         System.out.println(s);
         Editor user = editor_repo.findByEmail(s);
         System.out.println(user.getName());
+        
+
         while(paperIterator.hasNext())
         {
             Paper p = paperIterator.next();
@@ -69,7 +72,6 @@ public class HomeController
             {   
                 student_papers.add(p);
             }
-
         }
         mv.addObject("papers", student_papers);
         mv.addObject("editor", user);

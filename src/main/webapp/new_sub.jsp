@@ -49,7 +49,7 @@
 					<i class="fa fa-moon-o dark"></i>
 				</a>
 			</li>-->
-      <p> Indian Journal of Computer <br>Science and Technology</p>
+			<p>${editor.name}</p>
 
 			<li class="nav-item avt-wrapper">
 				<div class="avt dropdown">

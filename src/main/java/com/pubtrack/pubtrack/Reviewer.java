@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 @Entity
 public class Reviewer {
-    private String rev_id;
+    private String revid;
     private String name;
     private String domain;
     @Id
@@ -18,14 +18,14 @@ public class Reviewer {
      * @return String return the rev_id
      */
     public String getRev_id() {
-        return rev_id;
+        return revid;
     }
 
     /**
      * @param rev_id the rev_id to set
      */
-    public void setRev_id(String rev_id) {
-        this.rev_id = rev_id;
+    public void setRev_id(String revid) {
+        this.revid = revid;
     }
 
     /**
