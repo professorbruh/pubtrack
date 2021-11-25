@@ -38,6 +38,7 @@
            <label for="radio-choice-1">Status</label>
          <br>
   <select name="extraoptions" id="select-choice-2">
+    <option value="none" selected disabled hidden>Select stage</option>
   		            <option value="3">Stage 3</option>
                   <option value="4">Stage 4</option>
                   <option value="5">Accepted</option>

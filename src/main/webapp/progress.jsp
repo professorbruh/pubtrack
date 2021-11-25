@@ -94,7 +94,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="status.html" class="sidebar-nav-link active">
+				<a href="statistics" class="sidebar-nav-link active">
 					<div>
 						<i class="fa fa-th-list"></i>
 					</div>

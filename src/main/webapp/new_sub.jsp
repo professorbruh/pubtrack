@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -93,7 +94,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="status.html" class="sidebar-nav-link active">
+				<a href="/statistics" class="sidebar-nav-link active">
 					<div>
 						<i class="fa fa-th-list"></i>
 					</div>
@@ -156,158 +157,24 @@
 
 								</thead>
 								<tbody>
-
-										 <tr>
-<td style="text-align:center;">NS981</td>
-											 <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-											 <td style="text-align:center;">Sheena Angra
-Chitkara University, India
-<br>
-Sachin Ahuja
-CURIN, Chitkara University, India</td>
-											 <td style="text-align:center;">Machine Learning</td>
-											 <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
+											 <c:forEach items="${papers}" var = "p">
 											 <tr>
-
-
-                         <tr>
-<td style="text-align:center;">NS981</td>
-                          <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                          <td style="text-align:center;">Sheena Angra
-    Chitkara University, India
-    <br>
-    Sachin Ahuja
-    CURIN, Chitkara University, India</td>
-                          <td style="text-align:center;">Machine Learning</td>
-                          <td style="text-align:center;">Stage 2<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-    <td style="text-align:center"><a href='/allot_reviewers'><i class="fa fa-plus" aria-hidden="true"></i></a></td>
-                          <tr>
-
-                            <tr>
-<td style="text-align:center;">NS981</td>
-                              <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                              <td style="text-align:center;">Sheena Angra
-       Chitkara University, India
-       <br>
-       Sachin Ahuja
-       CURIN, Chitkara University, India</td>
-                              <td style="text-align:center;">Machine Learning</td>
-                              <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                              <tr>
-
-
-                                <tr>
-<td style="text-align:center;">NS981</td>
-                                  <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                  <td style="text-align:center;">Sheena Angra
-           Chitkara University, India
-           <br>
-           Sachin Ahuja
-           CURIN, Chitkara University, India</td>
-                                  <td style="text-align:center;">Machine Learning</td>
-                                  <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                                  <tr>
-
-
-                                    <tr>
-<td style="text-align:center;">NS981</td>
-
-                                      <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                      <td style="text-align:center;">Sheena Angra
-               Chitkara University, India
-               <br>
-               Sachin Ahuja
-               CURIN, Chitkara University, India</td>
-                                      <td style="text-align:center;">Machine Learning</td>
-                                      <td style="text-align:center;">Stage 2<a href="/update_status12"><br><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-                                        <td style="text-align:center"><a href='/allot_reviewers'><i class="fa fa-plus" aria-hidden="true"></i></a></td>
-
-                                      <tr>
-
-                                        <tr>
-<td style="text-align:center;">NS981</td>
-                                          <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                          <td style="text-align:center;">Sheena Angra
-                   Chitkara University, India
-                   <br>
-                   Sachin Ahuja
-                   CURIN, Chitkara University, India</td>
-                                          <td style="text-align:center;">Machine Learning</td>
-                                          <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                                          <tr>
-
-                                            <tr>
-<td style="text-align:center;">NS981</td>
-                                              <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                              <td style="text-align:center;">Sheena Angra
-                       Chitkara University, India
-                       <br>
-                       Sachin Ahuja
-                       CURIN, Chitkara University, India</td>
-                                              <td style="text-align:center;">Machine Learning</td>
-                                              <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                                              <tr>
-
-                                                <tr>
-<td style="text-align:center;">NS981</td>
-                                                  <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                                  <td style="text-align:center;">Sheena Angra
-                           Chitkara University, India
-                           <br>
-                           Sachin Ahuja
-                           CURIN, Chitkara University, India</td>
-                                                  <td style="text-align:center;">Machine Learning</td>
-                                                  <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                                                  <tr>
-
-
-                                                    <tr>
-<td style="text-align:center;">NS981</td>
-                                                      <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                                      <td style="text-align:center;">Sheena Angra
-                               Chitkara University, India
-                               <br>
-                               Sachin Ahuja
-                               CURIN, Chitkara University, India</td>
-                                                      <td style="text-align:center;">Machine Learning</td>
-                                                      <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                                                      <tr>
-
-
-                                                        <tr>
-<td style="text-align:center;">NS981</td>
-                                                          <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                                          <td style="text-align:center;">Sheena Angra
-                                   Chitkara University, India
-                                   <br>
-                                   Sachin Ahuja
-                                   CURIN, Chitkara University, India</td>
-                                                          <td style="text-align:center;">Machine Learning</td>
-                                                          <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                                                          <tr>
-
-
-                                                            <tr>
-<td style="text-align:center;">NS981</td>
-                                                              <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-                                                              <td style="text-align:center;">Sheena Angra
-                                       Chitkara University, India
-                                       <br>
-                                       Sachin Ahuja
-                                       CURIN, Chitkara University, India</td>
-                                                              <td style="text-align:center;">Machine Learning</td>
-                                                              <td style="text-align:center;">Stage 1<a href="/update_status12"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
-
-                                                              <tr>
-
+												<td style="text-align:center;">${p.ref_id}</td>
+												 <td style="text-align:center;"><a href="https://www.ijcsmc.com/docs/papers/May2015/V4I5201539.pdf">${p.title}</td>
+		
+		
+		
+		
+		
+		
+		
+													<td style="text-align:center;">${p.student.name}</td>
+										<td style="text-align:center;">${p.domain}</td>
+										<td style="text-align:center;">Stage ${p.status}<a href="/update_status12?paper=${p.ref_id}"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+										<td style="text-align:center"><a href='/allot_reviewers?paper=${p.ref_id}'><i class="fa fa-plus" aria-hidden="true"></i></a></td>
+												
+										 </tr>		
+										</c:forEach>									 
 
 
 

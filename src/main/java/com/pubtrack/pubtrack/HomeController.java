@@ -84,7 +84,27 @@ public class HomeController
 
     @RequestMapping("/new_submissions")
     public ModelAndView submissions(HttpSession session){
-        return new ModelAndView("new_sub.jsp");
+        ModelAndView mv = new ModelAndView("new_sub.jsp");
+        Iterable<Paper> paper= paper_repo.findAll();
+        Iterator<Paper> paperIterator = paper.iterator();
+        ArrayList<Paper> student_papers = new ArrayList<Paper>();
+        String s = (String)session.getAttribute("user_email");
+        System.out.println(s);
+        Editor user = editor_repo.findByEmail(s);
+        System.out.println(user.getName());
+        while(paperIterator.hasNext())
+        {
+            Paper p = paperIterator.next();
+            
+            if((p.getStatus()==1 || p.getStatus()==2) && p.getEditor().getName().equalsIgnoreCase(user.getName()))
+            {   
+                student_papers.add(p);
+            }
+
+        }
+        mv.addObject("papers", student_papers);
+        mv.addObject("editor", user);
+        return mv;
     }
 
     @RequestMapping("/statistics")
@@ -116,9 +136,10 @@ public class HomeController
     }
 
     @RequestMapping("/update_status12")
-    public ModelAndView update12(HttpSession session){
+    public ModelAndView update12(@RequestParam(name="paper")String ref_id, HttpSession session){
         ModelAndView mv = new ModelAndView("update_status12.jsp");
-
+        Paper paper = paper_repo.findById(ref_id).orElse(new Paper());
+        mv.addObject("paper", paper);
         return mv;
     }
 

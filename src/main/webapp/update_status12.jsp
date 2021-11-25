@@ -14,7 +14,7 @@
 
 </head>
 <body>
-  <form action="#" method="post">
+  <form action="/update_status35?paper=${paper.ref_id}" method=POST>
 
       <fieldset>
         <i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true"></i>
