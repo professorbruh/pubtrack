@@ -1,10 +1,16 @@
 package com.pubtrack.pubtrack;
-import java.util.HashSet;
+import java.sql.Date;
+
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
-public class Comment {
+import javax.persistence.PrimaryKeyJoinColumn;
+@Entity
+public class Comment{
     @Id
     private String reference_id;
     private String reviewer_id;
