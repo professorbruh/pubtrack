@@ -25,6 +25,9 @@ public class HomeController
     @Autowired
     EditorRepo editor_repo;
 
+    @Autowired
+    CommentRepo comment_repo;
+
     @RequestMapping("test")
     public ModelAndView testpage(@RequestParam(name = "fname", required = false)String fname,@RequestParam(name = "lname", required = false)String lname, HttpSession session)
     {
@@ -208,6 +211,9 @@ public class HomeController
     public ModelAndView reviewer_login(HttpSession session)
     {
         ModelAndView mv = new ModelAndView("reviewer_dash.jsp");
+        String r=(String)session.getAttribute("user_email");
+        Login st=login_repo.findById(r).orElse(new Login());
+        
         return mv;
     }
     @RequestMapping("admin_dashboard")
