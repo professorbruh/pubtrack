@@ -160,8 +160,8 @@
 											<td style="text-align:center;"><a href=${p.manuscript}>${p.title}</td>
 											<td style="text-align:center;">${p.student.name}</td>
 											<td style="text-align:center;">${p.domain}</td>
-											<td style="text-align:center;">Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen <a href='/comments'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
-					  <td style="text-align:center;">Stage 4<a href="/update_status35"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+											<td style="text-align:center;"><a href='/comments?paper=${p.ref_id}'><br><i class="fa fa-comments" aria-hidden="true"></i></a></td>
+					  <td style="text-align:center;">Stage ${p.status}<a href="/update_status35?paper=${p.ref_id}"><br><i class="fa fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
 									</c:forEach>
 
 

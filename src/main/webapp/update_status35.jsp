@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,42 +15,38 @@
 
 </head>
 <body>
-  <form action="#" method="post">
+  <form action="/update_status35?paper=${paper.ref_id}" method=POST>
 
       <fieldset>
-        <i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true"></i>
+        <i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true" href="/progress"></i>
       <div>
           <label for="name" class="mid">Title</label>
-          <input type="text" name="name" id="name" value="" tabindex="1" placeholder="Machine Learning Techniques Used to analyse driver behaviour using OBD">
+          <input type="text" name="name" id="name" value="" tabindex="1" placeholder="${paper.title}" disabled>
       </div>
 
       <div>
           <label for="password" class="mid">Author(s)</label>
-          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="Sheena Angra,Sachin Ahuja">
+          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="${paper.student.name}" disabled>
       </div>
 
         <div>
           <label for="password" class="mid">Domain</label>
-          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="Machine Learning">
+          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="${paper.domain}" disabled>
       </div>
 
        <div>
            <label for="radio-choice-1">Status</label>
          <br>
   <select name="extraoptions" id="select-choice-2">
-  		            <option value="Choice 1">Stage 3</option>
-                  <option value="Choice 2">Stage 4</option>
-                  <option value="Choice 3">Accepted</option>
-                  <option value="Choice 4">Rejected</option>
-									<option value="Choice 5">Require Revision</option>
+  		            <option value="3">Stage 3</option>
+                  <option value="4">Stage 4</option>
+                  <option value="5">Accepted</option>
+                  <option value="0">Rejected</option>
+									<option value="2">Require Revision</option>
 
           </select>
       </div>
 <br>
-			<div>
-				<label for="password" class="mid">Reason (if rejected or required revision)</label>
-				<input type="text" name="password" id="password" value="" tabindex="2" >
-		</div>
 
     <div>
         <br>

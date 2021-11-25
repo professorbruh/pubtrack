@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,27 +33,26 @@
                 <tbody>
                   <tr>
         									<td>ProgressID</td>
-        									<td>PRID2345</td>
+        									<td>${paper.ref_id}</td>
 
                             <tr>
         									<td>Title</td>
-        									<td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
+        									<td>${paper.title}</td>
 
                                <tr>
         									<td>Author(s)</td>
-        									<td>Sheena Angra Chitkara University, India<br>
-Sachin Ahuja CURIN, Chitkara University, India</td>
+        									<td>${paper.student.name}</td>
 
 
 
         									<tr>
         									<td>Domain</td>
-        									<td>Machine Learning
+        									<td>${paper.domain}
         									</td>
 
                           <tr>
         									<td>Status</td>
-        									<td>Stage 3
+        									<td>Stage ${paper.status}
         									</td>
                           </tbody>
                           </table>
@@ -65,29 +65,18 @@ Sachin Ahuja CURIN, Chitkara University, India</td>
                     <table>
         			<thead>
         			<tr>
-        				<th width=20% style='font-weight:bold; font-size:1.23rem;'>ReviwerID</th>
-        				<th  style='font-weight:bold;font-size:1.23rem;' >Name</th>
+        				<th width=20% style='font-weight:bold; font-size:1.23rem;'>ReviewerID</th>
                 <th  style='font-weight:bold;font-size:1.23rem;' >Comment</th>
         				</tr>
         		</thead>
         							<tbody>
-        								<tr>
-        									<td style="text-align:center;">R0023</td>
-        									<td style="text-align:center;">Manikandan</td>
-                          <td style="text-align:center;"> Good. Topic seems interesting. No repetition found. The article is fact checked</td>
-
-                          <tr>
-                            <td style="text-align:center;">R0023</td>
-                            <td style="text-align:center;">Manikandan</td>
-                            <td style="text-align:center;"> Good. Topic seems interesting. No repetition found. The article is fact checked</td>
-
-                            <tr>
-                              <td style="text-align:center;">R0023</td>
-                              <td style="text-align:center;">Manikandan</td>
-                              <td style="text-align:center;"> Good. Topic seems interesting. No repetition found. The article is fact checked</td>
+        								<tr> <c:forEach items="${comment}" var = "com">
+                          <td style="text-align:center;">${com.reviewerid}</td>
+                          <td style="text-align:center;">${com.comments}</td>
 
 
-
+                        </c:forEach>
+        									
 
         							</tbody>
         						</table>
