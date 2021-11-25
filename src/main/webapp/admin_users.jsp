@@ -183,14 +183,14 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="admin_dashboard" class="nav-link active">
+            <a href="admin_dashboard" class="nav-link">
               &nbsp;<img src = "admin/img/credit/4366352.png" height=20>
               <p>
                 &nbsp;Dashboard
               </p>
             </a>
             <li class="nav-item">
-              <a href="admin_users" class="nav-link">
+              <a href="admin_users" class="nav-link active">
                 &nbsp;<img src = "admin/img/credit/1984717.png" height=20>
                 <p>
                   &nbsp;Users
@@ -219,12 +219,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Users</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item active">Users</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -233,49 +233,35 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3">
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="text-center">Profile</h3>
-              </div>
-              <div class="card-body">
-                <div class="content-header">
-                  
-        <div class="inline">
-            <h5 class="font-weight-bold first">Email</h5>
-            <h5 class="second"><c:out value="${user.email}"/>  </h5>
-            <hr>
-        </div>
-
-        <div class="inline">
-            <h5 class="font-weight-bold first">First Name</h5>
-            <h5 class="second">Jeev</h5>
-            <hr>
-        </div>
-
-        <div class="inline">
-            <h5 class="font-weight-bold first">Last Name</h5>
-            <h5 class="second">SS</h5>
-            <hr>
-            
-        </div>
-        
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /.col-md-6 -->
-        </div>
-        
-        <a class ="text-center" href="change_password"><h5>Change the password?</h5></a><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
+    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%" >
+      <thead>
+        <tr>
+          <th class="th-sm">Name
+          </th>
+          <th class="th-sm">Position
+          </th>
+          <th class="th-sm">Office
+          </th>
+          <th class="th-sm">Age
+          </th>
+          <th class="th-sm">Start date
+          </th>
+          <th class="th-sm">Salary
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tiger Nixon</td>
+          <td>System Architect</td>
+          <td>Edinburgh</td>
+          <td>61</td>
+          <td>2011/04/25</td>
+          <td>$320,800</td>
+        </tr>
+        </tr>
+      </tbody>
+    </table>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
@@ -290,7 +276,17 @@
   </aside>
   <!-- /.control-sidebar -->
 
-
+  <!-- Main Footer -->
+  <footer class="main-footer" style = "background-color:#343a40;">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Other footer
+    </div>
+    <!-- Default to the left -->
+    <strong>Insert footer here</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 

@@ -10,7 +10,11 @@
                     <h1>Create Account</h1>
                     <input type="text" name="name" placeholder="Name" required="" />
                     <input type="email" name="email" placeholder="Email" required="" />
-                    <input type="text" name="mno" placeholder="Mobile Number" required="" />
+              <select class="custom-select my-1 mr-sm-2" id="select" name="type" placeholder = "Type of user">
+                  <option selected value="student">Student</option>
+                  <option value="advisor">Editor</option>
+                  <option value="faculty">Publisher</option>
+              </select>
                     <input type="password" name="pass1" placeholder="Password" required="" />
                     <input type="password" name="pass2" placeholder="Confirm Password" required="" />
                     <button>Sign Up</button>
