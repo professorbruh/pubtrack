@@ -13,7 +13,6 @@ import javax.persistence.PrimaryKeyJoinColumn;
 public class Comment{
     @Id
     private String reference_id;
-    @Id
     private String reviewer_id;
     private String comments;
 

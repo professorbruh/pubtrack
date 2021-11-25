@@ -11,9 +11,9 @@ public class ReviewerComment implements IReviewerComment {
 
 
     @Override
-    public List<Comment> findById(String reviewerID) {
+    public List<Comment> findBySearchTermNative(String reviewerID) {
         // TODO Auto-generated method stub
-        (List<Comment>) rev_dash = (List<Comment>) repository.findByID(String reviewerID);
+        var rev_dash = (List<Comment>) repository.findBySearchTermNative(reviewerID);
         return rev_dash;
     }
 }
