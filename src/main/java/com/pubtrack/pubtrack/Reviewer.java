@@ -7,10 +7,10 @@ import javax.persistence.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 @Entity
 public class Reviewer {
-    @Id
     private String rev_id;
     private String name;
     private String domain;
+    @Id
     private String email;
     
 

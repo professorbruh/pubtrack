@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
-
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 import javax.servlet.http.HttpSession;
@@ -27,6 +27,9 @@ public class HomeController
 
     @Autowired
     CommentRepo comment_repo;
+
+    @Autowired
+    IReviewerComment reviewerComment;
 
     @RequestMapping("test")
     public ModelAndView testpage(@RequestParam(name = "fname", required = false)String fname,@RequestParam(name = "lname", required = false)String lname, HttpSession session)
@@ -212,10 +215,14 @@ public class HomeController
     {
         ModelAndView mv = new ModelAndView("reviewer_dash.jsp");
         String r=(String)session.getAttribute("user_email");
-        Login st=login_repo.findById(r).orElse(new Login());
-        
+
+        //Login st=login_repo.findById(r).orElse(new Login());
+
+        var rev_comments = (List<Comment>) reviewerComment.findBySearchTermNative(r);
+        mv.addObject("revcom", rev_comments);
         return mv;
     }
+
     @RequestMapping("admin_dashboard")
     public ModelAndView admin_login(HttpSession session)
     {

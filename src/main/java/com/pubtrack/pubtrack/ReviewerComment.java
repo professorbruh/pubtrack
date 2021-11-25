@@ -7,7 +7,8 @@ import org.springframework.stereotype.Service;
 public class ReviewerComment implements IReviewerComment {
 
     @Autowired
-    private CommentRepo repository;
+    private static CommentRepo repository;
+    
 
 
     @Override
