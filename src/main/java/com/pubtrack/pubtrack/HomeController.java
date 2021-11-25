@@ -28,9 +28,6 @@ public class HomeController
     @Autowired
     CommentRepo comment_repo;
 
-    @Autowired
-    IReviewerComment reviewerComment;
-
     @RequestMapping("test")
     public ModelAndView testpage(@RequestParam(name = "fname", required = false)String fname,@RequestParam(name = "lname", required = false)String lname, HttpSession session)
     {
@@ -49,68 +46,92 @@ public class HomeController
     }
 
     @RequestMapping("/faq")
-    public ModelAndView faq(){
+    public ModelAndView faq(HttpSession session){
         return new ModelAndView("faq.jsp");
     }
 
 
     @RequestMapping("/progress")
-    public ModelAndView progress(){
-        return new ModelAndView("progress.jsp");
+    public ModelAndView progress(HttpSession session){
+        ModelAndView mv = new ModelAndView("progress.jsp");
+        Iterable<Paper> paper= paper_repo.findAll();
+        Iterator<Paper> paperIterator = paper.iterator();
+        ArrayList<Paper> student_papers = new ArrayList<Paper>();
+        String s = (String)session.getAttribute("user_email");
+        System.out.println(s);
+        Editor user = editor_repo.findByEmail(s);
+        System.out.println(user.getName());
+        while(paperIterator.hasNext())
+        {
+            Paper p = paperIterator.next();
+            
+            if((p.getStatus()<5) && (p.getStatus()>0) && p.getEditor().getName().equalsIgnoreCase(user.getName()))
+            {   
+                student_papers.add(p);
+            }
+
+        }
+        mv.addObject("papers", student_papers);
+        mv.addObject("editor", user);
+        for(int i=0;i<student_papers.size();i++)
+        {
+            System.out.println(student_papers.get(i));
+        }
+        return mv;
     }
 
     @RequestMapping("/new_submissions")
-    public ModelAndView submissions(){
+    public ModelAndView submissions(HttpSession session){
         return new ModelAndView("new_sub.jsp");
     }
 
     @RequestMapping("/statistics")
-    public ModelAndView statistics(){
+    public ModelAndView statistics(HttpSession session){
         return new ModelAndView("statistics.jsp");
     }
 
     @RequestMapping("/status")
-    public ModelAndView status(){
+    public ModelAndView status(HttpSession session){
         return new ModelAndView("status.jsp");
     }
 
     @RequestMapping("/submit_paper")
-    public ModelAndView submit_paper(){
+    public ModelAndView submit_paper(HttpSession session){
         return new ModelAndView("submit_paper.jsp");
     }
 
     @RequestMapping("/comments")
-    public ModelAndView comments(){
+    public ModelAndView comments(HttpSession session){
         return new ModelAndView("comments.jsp");
     }
 
     @RequestMapping("/update_status12")
-    public ModelAndView update12(){
+    public ModelAndView update12(HttpSession session){
         return new ModelAndView("update_status12.jsp");
     }
 
     @RequestMapping("/update_status35")
-    public ModelAndView update35(){
+    public ModelAndView update35(HttpSession session){
         return new ModelAndView("update_status35.jsp");
     }
 
     @RequestMapping("/allot_reviewers")
-    public ModelAndView allot_reviewers(){
+    public ModelAndView allot_reviewers(HttpSession session){
         return new ModelAndView("allot_reviewers.jsp");
     }
 
     @RequestMapping("/reviewer_add_comments")
-    public ModelAndView reviewer_add_comments(){
+    public ModelAndView reviewer_add_comments(HttpSession session){
         return new ModelAndView("reviewer_add_comments.jsp");
     }
 
     @RequestMapping("/reviewer_edit_comments")
-    public ModelAndView reviewer_edit_comments(){
+    public ModelAndView reviewer_edit_comments(HttpSession session){
         return new ModelAndView("reviewer_edit_comments.jsp");
     }
 
     @RequestMapping("/profile")
-    public ModelAndView profile(){
+    public ModelAndView profile(HttpSession session){
         return new ModelAndView("profile.jsp");
     }
 
@@ -197,15 +218,16 @@ public class HomeController
         String s = (String)session.getAttribute("user_email");
         System.out.println(s);
         Editor user = editor_repo.findByEmail(s);
-        System.out.println(user);
+        System.out.println(user.getName());
         while(paperIterator.hasNext())
         {
             Paper p = paperIterator.next();
             
-            if(p.getStatus()==5)
+            if(p.getStatus()==5 && p.getEditor().getName().equalsIgnoreCase(user.getName()))
             {   
                 student_papers.add(p);
             }
+
         }
         mv.addObject("papers", student_papers);
         mv.addObject("editor", user);
@@ -222,9 +244,6 @@ public class HomeController
         String r=(String)session.getAttribute("user_email");
 
         //Login st=login_repo.findById(r).orElse(new Login());
-
-        var rev_comments = (List<Comment>) reviewerComment.findBySearchTermNative(r);
-        mv.addObject("revcom", rev_comments);
         return mv;
     }
 

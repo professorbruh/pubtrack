@@ -133,7 +133,7 @@
 				<div class="card">
 					<div class="card-header">
             <ul class="nav nav-pills nav-justified">
-    <li style="font-size:1.2rem"><a href="/status">Published</a></li>
+    <li style="font-size:1.2rem"><a href="/publisher_dashboard">Published</a></li>
     <li><a href="/progress" style="font-size:1.2rem">In Progress</a></li>
     <li  class="active"><a href="/new_submissions" style="font-size:1.2rem">New submissions</a></li>
   </ul>

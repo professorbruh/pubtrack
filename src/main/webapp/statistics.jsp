@@ -88,7 +88,7 @@
 				</a>
 			</li>
 			<li  class="sidebar-nav-item">
-				<a href="/status" class="sidebar-nav-link">
+				<a href="/publisher_dashboard" class="sidebar-nav-link">
 					<div>
 						<i class="fa fa-th-list"></i>
 					</div>

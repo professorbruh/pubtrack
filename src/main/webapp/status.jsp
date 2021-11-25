@@ -151,7 +151,6 @@
 										<th width=20% style="font-weight:bold;text-align:center" >Title</th>
 										<th style="font-weight:bold;text-align:center">Author(s)</th>
 										<th style="font-weight:bold;text-align:center">Domain</th>
-										<th style="font-weight:bold;text-align:center">Reviewers</th>
 										<th style="font-weight:bold;text-align:center">Date of Publication</th>
 									</tr>
 
@@ -161,50 +160,17 @@
 
 								</thead>
 								<tbody>
-                            
-										 <tr>
+									<c:forEach items="${papers}" var = "p">
+										<tr><td style="text-align:center;">${p.ref_id}</td>
+											<td style="text-align:center;">${p.title}</td>
+											<td style="text-align:center;">${p.student.name}</td>
+											<td style="text-align:center;">${p.domain}</td>
+											<td style="text-align:center;">${p.data_of_submission}</td>
+										</tr>
+										
 
-											 <td>12344</td>
-											 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-											 <td>Sheena Angra
-Chitkara University, India
-<br>
-Sachin Ahuja
-CURIN, Chitkara University, India</td>
-											 <td>Machine Learning</td>
-											 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-											 <td>05-11-2016</td>
 
-												 </tr>
-									<tr>
-
-											 <td>12344</td>
-											 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-											 <td>Sheena Angra
-Chitkara University, India
-<br>
-Sachin Ahuja
-CURIN, Chitkara University, India</td>
-											 <td>Machine Learning</td>
-											 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-											 <td>05-11-2016</td>
-
-												 </tr>
-									
-									<tr>
-
-											 <td>12344</td>
-											 <td>Machine Learning Techniques Used to analyse driver behaviour using OBD</td>
-											 <td>Sheena Angra
-Chitkara University, India
-<br>
-Sachin Ahuja
-CURIN, Chitkara University, India</td>
-											 <td>Machine Learning</td>
-											 <td>Mark Dwain,<br>Carmel Tucker,<br>Shreeja Sen</td>
-											 <td>05-11-2016</td>
-
-												 </tr>
+									</c:forEach>
 
 
 									</tbody>

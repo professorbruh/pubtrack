@@ -12,6 +12,7 @@ import javax.persistence.PrimaryKeyJoinColumn;
 @Entity
 public class Comment{
     @Id
+    private String comment_id;
     private String reference_id;
     private String reviewer_id;
     private String comments;
@@ -56,6 +57,21 @@ public class Comment{
      */
     public void setComments(String comments) {
         this.comments = comments;
+    }
+
+
+    /**
+     * @return String return the comment_id
+     */
+    public String getComment_id() {
+        return comment_id;
+    }
+
+    /**
+     * @param comment_id the comment_id to set
+     */
+    public void setComment_id(String comment_id) {
+        this.comment_id = comment_id;
     }
 
 }
