@@ -68,7 +68,7 @@ public class HomeController
         {
             Paper p = paperIterator.next();
             
-            if((p.getStatus()<5) && (p.getStatus()>0) && p.getEditor().getName().equalsIgnoreCase(user.getName()))
+            if((p.getStatus()<5) && (p.getStatus()>2) && p.getEditor().getName().equalsIgnoreCase(user.getName()))
             {   
                 student_papers.add(p);
             }
@@ -103,18 +103,38 @@ public class HomeController
     }
 
     @RequestMapping("/comments")
-    public ModelAndView comments(HttpSession session){
-        return new ModelAndView("comments.jsp");
+    public ModelAndView comments(@RequestParam(name="paper")String ref_id,   HttpSession session)
+    {
+        ModelAndView mv = new ModelAndView("comments.jsp");
+        System.out.println(ref_id);
+        Paper paper = paper_repo.findById(ref_id).orElse(new Paper());
+        List<Comment> comment = comment_repo.findByReferenceid(ref_id);
+        mv.addObject("paper", paper);
+        mv.addObject("comment", comment);
+        return mv;
+        
     }
 
     @RequestMapping("/update_status12")
     public ModelAndView update12(HttpSession session){
-        return new ModelAndView("update_status12.jsp");
+        ModelAndView mv = new ModelAndView("update_status12.jsp");
+
+        return mv;
     }
 
     @RequestMapping("/update_status35")
-    public ModelAndView update35(HttpSession session){
-        return new ModelAndView("update_status35.jsp");
+    public ModelAndView update35(@RequestParam(name="paper")String ref_id,@RequestParam(name="extraoptions",required = false)String status_update, HttpSession session){
+        ModelAndView mv = new ModelAndView("update_status35.jsp");
+        Paper paper = paper_repo.findById(ref_id).orElse(new Paper());
+        session.setAttribute("currentpaper", ref_id);
+        mv.addObject("paper", paper);
+        if(status_update != null)
+        {
+            Paper k = paper_repo.findById(ref_id).orElse(new Paper());
+            k.setStatus(Integer.parseInt(status_update));
+            paper_repo.save(k);
+        }
+        return mv;
     }
 
     @RequestMapping("/allot_reviewers")
