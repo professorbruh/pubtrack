@@ -70,7 +70,8 @@
         				</tr>
         		</thead>
         							<tbody>
-        								<tr> <c:forEach items="${comment}" var = "com">
+        								<c:forEach items="${comment}" var = "com">
+										<tr> 
                           <td style="text-align:center;">${com.reviewerid}</td>
                           <td style="text-align:center;">${com.comments}</td>
 
