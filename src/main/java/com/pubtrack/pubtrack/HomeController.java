@@ -208,7 +208,7 @@ public class HomeController
         if(allotted_reviewer!=null)
         {
             Reviewer current = reviewerRepo.findByName(allotted_reviewer);
-            comment.setReferenceid(ref_id);
+            comment.setReferenceid(Long.getLong(ref_id));
             comment.setReviewerid(current.getRev_id());
             comment_repo.save(comment);
         }
