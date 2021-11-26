@@ -2,20 +2,15 @@ package com.pubtrack.pubtrack;
 import java.sql.Date;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.*;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Paper {
     @Id
-    private String ref_id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long ref_id;
     private String title;
     private String domain;
     private int status;
@@ -42,14 +37,14 @@ public class Paper {
     /**
      * @return String return the ref_id
      */
-    public String getRef_id() {
+    public Long getRef_id() {
         return ref_id;
     }
 
     /**
      * @param ref_id the ref_id to set
      */
-    public void setRef_id(String ref_id) {
+    public void setRef_id(Long ref_id) {
         this.ref_id = ref_id;
     }
 
@@ -192,5 +187,6 @@ public class Paper {
     public void setStudent(Student student) {
         this.student = student;
     }
+
 
 }

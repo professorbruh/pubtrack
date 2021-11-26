@@ -3,9 +3,10 @@ package com.pubtrack.pubtrack;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.sql.Date;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.*;
@@ -121,7 +122,35 @@ public class HomeController
 
     @RequestMapping("/submit_paper")
     public ModelAndView submit_paper(HttpSession session){
+
+
         return new ModelAndView("submit_paper.jsp");
+    }
+
+
+    @PostMapping("/set_paper")
+    public String setPaper(@RequestParam(name="title") String title
+            ,@RequestParam(name = "email1") String email1
+            ,@RequestParam(name = "name1") String name1
+            ,@RequestParam(name = "institution") String institution
+            ,@RequestParam(name = "domain") String domain
+            ,@RequestParam(name = "journal") String journal
+            ,@RequestParam(name = "plagiarismpercent") String plagiarismpercent
+            ,@RequestParam(name = "manuscript") String manuscript
+            ,@RequestParam(name = "report") String report
+            ){
+        Paper paper=new Paper();
+        paper.setStudent(student_repo.findByEmail(email1));
+        paper.setTitle(title);
+        paper.setDomain(domain);
+        paper.setData_of_submission(new Date(System.currentTimeMillis()));
+        paper.setPlagiarism_percentage(plagiarismpercent);
+        paper.setManuscript(manuscript);
+        paper.setPlagiarism_report(report);
+        paper.setEditor(editor_repo.findById(journal).get());
+        paper.setStudent(student_repo.findByEmail(email1));
+        paper_repo.save(paper);
+        return "success";
     }
 
     @RequestMapping("/comments")
@@ -265,8 +294,8 @@ public class HomeController
         while(paperIterator.hasNext())
         {
             Paper p = paperIterator.next();
-            
-            if(p.getStudent().getEmail().equals(st.getEmail()))
+            Student student=p.getStudent();
+            if(student!=null && student.getEmail().equals(st.getEmail()))
             {   
                 student_papers.add(p);
             }

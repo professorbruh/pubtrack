@@ -14,8 +14,8 @@ public class Comment{
     @Id
     @GeneratedValue(generator="system-uuid")
     @GenericGenerator(name="system-uuid", strategy = "uuid")
-    private String comment_id;
-    private String referenceid;
+    private Long comment_id;
+    private Long referenceid;
     private String reviewerid;
     private String comments;
 
@@ -39,14 +39,14 @@ public class Comment{
     /**
      * @return String return the comment_id
      */
-    public String getComment_id() {
+    public Long getComment_id() {
         return comment_id;
     }
 
     /**
      * @param comment_id the comment_id to set
      */
-    public void setComment_id(String comment_id) {
+    public void setComment_id(Long comment_id) {
         this.comment_id = comment_id;
     }
 
@@ -54,14 +54,14 @@ public class Comment{
     /**
      * @return String return the referenceid
      */
-    public String getReferenceid() {
+    public Long getReferenceid() {
         return referenceid;
     }
 
     /**
      * @param referenceid the referenceid to set
      */
-    public void setReferenceid(String referenceid) {
+    public void setReferenceid(Long referenceid) {
         this.referenceid = referenceid;
     }
 
