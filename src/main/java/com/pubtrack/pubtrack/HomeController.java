@@ -102,7 +102,7 @@ public class HomeController
             {   
                 student_papers.add(p);
             }
-
+            
         }
         mv.addObject("papers", student_papers);
         mv.addObject("editor", user);
