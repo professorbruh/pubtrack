@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.*;
 import javax.servlet.http.HttpSession;
 @Controller
@@ -28,6 +27,9 @@ public class HomeController
 
     @Autowired
     CommentRepo comment_repo;
+
+    @Autowired
+    ReviewerRepo reviewerRepo;
 
     @RequestMapping("test")
     public ModelAndView testpage(@RequestParam(name = "fname", required = false)String fname,@RequestParam(name = "lname", required = false)String lname, HttpSession session)
@@ -136,10 +138,16 @@ public class HomeController
     }
 
     @RequestMapping("/update_status12")
-    public ModelAndView update12(@RequestParam(name="paper")String ref_id, HttpSession session){
+    public ModelAndView update12(@RequestParam(name="paper")String ref_id,@RequestParam(name="extraoptions",required = false)String status_update, HttpSession session){
         ModelAndView mv = new ModelAndView("update_status12.jsp");
         Paper paper = paper_repo.findById(ref_id).orElse(new Paper());
         mv.addObject("paper", paper);
+        if(status_update != null)
+        {
+            Paper k = paper_repo.findById(ref_id).orElse(new Paper());
+            k.setStatus(Integer.parseInt(status_update));
+            paper_repo.save(k);
+        }
         return mv;
     }
 
@@ -159,8 +167,23 @@ public class HomeController
     }
 
     @RequestMapping("/allot_reviewers")
-    public ModelAndView allot_reviewers(HttpSession session){
-        return new ModelAndView("allot_reviewers.jsp");
+    public ModelAndView allot_reviewers(@RequestParam(name="paper")String ref_id,@RequestParam(name="extraoptions",  required = false)String allotted_reviewer,HttpSession session){
+        Comment comment=new Comment();
+        ModelAndView mv = new ModelAndView("allot_reviewers.jsp");
+        Paper paper = paper_repo.findById(ref_id).orElse(new Paper());
+        session.setAttribute("currentpaper", ref_id);
+        Iterable<Reviewer> revs = reviewerRepo.findAll();
+        Iterator<Reviewer> revsIterator = revs.iterator();
+        mv.addObject("paper", paper);
+        mv.addObject("revs", revsIterator);
+        if(allotted_reviewer!=null)
+        {
+            Reviewer current = reviewerRepo.findByName(allotted_reviewer);
+            comment.setReferenceid(ref_id);
+            comment.setReviewerid(current.getRev_id());
+            comment_repo.save(comment);
+        }
+        return mv;
     }
 
     @RequestMapping("/reviewer_add_comments")

@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,30 +18,29 @@
   <form action="#" method="post">
 
       <fieldset>
-        <i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true"></i>
+        <a href="/new_submissions"><i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true" ></i></a>
       <div>
           <label for="name" class="mid">Title</label>
-          <input type="text" name="name" id="name" value="" tabindex="1" placeholder="Machine Learning Techniques Used to analyse driver behaviour using OBD">
+          <input type="text" name="name" id="name" value="" tabindex="1" placeholder="${paper.title}" disabled>
       </div>
 
       <div>
           <label for="password" class="mid">Author(s)</label>
-          <input type="text" name="author" id="author" value="" tabindex="2" placeholder="Sheena Angra,Sachin Ahuja">
+          <input type="text" name="author" id="author" value="" tabindex="2" placeholder="${paper.student.name}" disabled>
       </div>
 
         <div>
           <label for="domain" class="mid">Domain</label>
-          <input type="text" name="domain" id="domain" value="" tabindex="2" placeholder="Machine Learning">
+          <input type="text" name="domain" id="domain" value="" tabindex="2" placeholder="${paper.domain}" disabled>
       </div>
 
        <div>
            <label for="radio-choice-1">Allot Reviewers</label>
          <br>
   <select name="extraoptions" id="select-choice-2">
-  		            <option value="Choice 1">Mallavika Nair</option>
-                  <option value="Choice 2">Robbert Mutt</option>
-                  <option value="Choice 3">Megna Kannan</option>
-                  <option value="Choice 4">Shree Jai</option>
+                  <c:forEach items="${revs}" var = "r">
+  		            <option value="${r.name}">${r.name}</option>
+                  </c:forEach>
 
           </select>
       </div>

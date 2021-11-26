@@ -18,7 +18,7 @@
   <form action="/update_status35?paper=${paper.ref_id}" method=POST>
 
       <fieldset>
-        <i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true" href="/progress"></i>
+        <a href="/progress"> <i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true" ></i></a>
       <div>
           <label for="name" class="mid">Title</label>
           <input type="text" name="name" id="name" value="" tabindex="1" placeholder="${paper.title}" disabled>

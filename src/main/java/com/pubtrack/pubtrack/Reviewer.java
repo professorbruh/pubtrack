@@ -1,10 +1,8 @@
 package com.pubtrack.pubtrack;
-import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import org.springframework.format.annotation.DateTimeFormat;
 @Entity
 public class Reviewer {
     private String revid;

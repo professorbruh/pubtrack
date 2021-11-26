@@ -14,31 +14,35 @@
 
 </head>
 <body>
-  <form action="/update_status35?paper=${paper.ref_id}" method=POST>
+  <form action="/update_status12?paper=${paper.ref_id}" method=POST>
 
       <fieldset>
-        <i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true"></i>
+        <a href="/new_submissions"><i class="fa fa-arrow-left" style="color:#91CAB4;font-size:1.5rem;"aria-hidden="true" ></i></a>
       <div>
           <label for="name" class="mid">Title</label>
-          <input type="text" name="name" id="name" value="" tabindex="1" placeholder="Machine Learning Techniques Used to analyse driver behaviour using OBD">
+          <input type="text" name="name" id="name" value="" tabindex="1" placeholder="${paper.title}" disabled> 
       </div>
 
       <div>
           <label for="password" class="mid">Author(s)</label>
-          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="Sheena Angra,Sachin Ahuja">
+          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="${paper.student.name}" disabled>
       </div>
 
         <div>
           <label for="password" class="mid">Domain</label>
-          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="Machine Learning">
+          <input type="text" name="password" id="password" value="" tabindex="2" placeholder="${paper.domain}" disabled>
       </div>
 
        <div>
            <label for="radio-choice-1">Basic Requirements met?</label>
          <br>
   <select name="extraoptions" id="select-choice-2">
-  		            <option value="Choice 1">Yes, update to Stage 2</option>
-                  <option value="Choice 2">No, reject manuscript</option>
+                  <option value="none" selected disabled hidden>Select stage</option>
+                  <option value="1">Stage 1 for revision</option>
+  		            <option value="2">Yes, update to Stage 2</option>
+                  <option value="3">Update to Stage 3</option>
+                  <option value="0">No, reject manuscript</option>
+                  
 
           </select>
       </div>
