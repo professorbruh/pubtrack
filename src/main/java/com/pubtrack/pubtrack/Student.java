@@ -15,8 +15,7 @@ public class Student {
     private String name;
     private String academic_year;
     private String branch;
-    @OneToMany
-    private Set<Student> student = new HashSet<>();
+
     @OneToOne
     @MapsId
     @JoinColumn(name = "email")
@@ -87,20 +86,8 @@ public class Student {
     /**
      * @return Set<Student> return the student
      */
-    public Set<Student> getStudent() {
-        return student;
-    }
 
-    /**
-     * @param student the student to set
-     */
-    public void setStudent(Set<Student> student) {
-        this.student = student;
-    }
 
-    /**
-     * @return Login return the login
-     */
     public Login getLogin() {
         return login;
     }

@@ -22,8 +22,7 @@ public class Editor {
     private String place;
     @DateTimeFormat
     private Date date;
-    @OneToMany
-    private Set<Editor> editors = new HashSet<>();
+
 
 
    
@@ -160,15 +159,10 @@ public class Editor {
     /**
      * @return Set<Editor> return the editors
      */
-    public Set<Editor> getEditors() {
-        return editors;
-    }
+
 
     /**
      * @param editors the editors to set
      */
-    public void setEditors(Set<Editor> editors) {
-        this.editors = editors;
-    }
 
 }

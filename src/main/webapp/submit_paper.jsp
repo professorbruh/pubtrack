@@ -1,3 +1,4 @@
+<%@ taglib prefix="th" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -182,6 +183,13 @@
                                 <span class="hide-menu">FAQ</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="/logout"
+                               aria-expanded="false">
+                                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <span class="hide-menu">Log Out</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -221,94 +229,70 @@
                                 <header class="card-header" style="font-size: larger; text-align: center;"> Mansucript Submission Form </header>
                                 <div class="card">
                                     <div class="card-body">
-                                        <form class="form-horizontal form-material" id="myform" action="abc.html">
+                                        <form class="form-horizontal form-material" id="myform" action="/set_paper" method="post">
                                             <div class="form-group mb-4">
                                                 <label class="col-md-12 p-0">Title</label>
                                                 <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" id="title" placeholder="Your title"
-                                                        class="form-control p-0 border-0" required> </div>
+                                                    <input type="text" id="title" name="title" placeholder="Your title"
+                                                        class="form-control p-0 border-0"  required> </div>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="col-md-12 p-0">Author 1</label>
+                                                <label class="col-md-12 p-0">Author</label>
                                                 <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" id="email1" placeholder="Email id"
+                                                    <input type="text" id="email1" name="email1" placeholder="Email id"
+                                                        class="form-control p-0 border-0"  required=""> </div>
+                                                <div class="col-md-12 border-bottom p-0">
+                                                    <input type="text" id="name1" name="name1" placeholder="Name"
                                                         class="form-control p-0 border-0" required=""> </div>
-                                                <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" id="name1" placeholder="Name"
-                                                        class="form-control p-0 border-0" required=""> </div>
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="col-md-12 p-0">Author 2</label>
-                                                <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" placeholder="Email id"
-                                                        class="form-control p-0 border-0"> </div>
-                                                <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" placeholder="Name"
-                                                        class="form-control p-0 border-0"> </div>
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="col-md-12 p-0">Author 3</label>
-                                                <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" placeholder="Email id"
-                                                        class="form-control p-0 border-0"> </div>
-                                                <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" placeholder="Name"
-                                                        class="form-control p-0 border-0"> </div>
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="col-md-12 p-0">Author 4</label>
-                                                <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" placeholder="Email id"
-                                                        class="form-control p-0 border-0"> </div>
-                                                <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" placeholder="Name"
-                                                        class="form-control p-0 border-0"> </div>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="col-md-12 p-0">Institution Name</label>
                                                 <div class="col-md-12 border-bottom p-0">
-                                                    <input type="text" id="institution" placeholder="Your institution name"
+                                                    <input type="text" id="institution" name="institution" placeholder="Your institution name"
                                                         class="form-control p-0 border-0" required> </div>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="col-md-8 p-0">Domain</label>
-                                                <div class="col-md-8 border-bottom p-0">
-                                                    <input  class="prompt" type="text" placeholder="Select your domain">
+                                                <label class="col-sm-8 p-0">Domain</label>
+                                                <div class="col-sm-8 border-bottom">
+                                                    <select class="form-select shadow-none p-0 border-0 form-control-line" name="domain">
+                                                        <option disabled selected>Select your Journal</option>
+                                                        <option id="domain1" name="domain" value="Computer Science">Computer Science</option>
+                                                        <option id="domain2" name="domain" value="Biotechnology">Biotechnology</option>
+                                                        <option id="domain3" name="domain" value="Nanotechnology">Nanotechnology</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="col-sm-8 p-0">Journal Name</label>
                                                 <div class="col-sm-8 border-bottom">
-                                                    <select class="form-select shadow-none p-0 border-0 form-control-line">
+                                                    <select class="form-select shadow-none p-0 border-0 form-control-line" name="journal">
                                                         <option disabled selected>Select your Journal</option>
-                                                        <option>Journal 1</option>
-                                                        <option>Journal 2</option>
-                                                        <option>Journal 3</option>
+                                                        <option id="journal1" name="journal" value="P001">P001</option>
+                                                        <option id="journal2" name="journal" value="P002">P002</option>
+                                                        <option id="journal3" name="journal" value="P003">P003</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="col-md-12 p-0">Manuscript Upload</label>
+                                                <label class="col-md-12 p-0">Upload manuscript</label>
                                                 <div class="col-md-12 border-bottom p-0">
-                                                    <input type="file" placeholder="Upload your Manuscript" accept=".pdf" id="manuscript"
-                                                        class="form-control p-0 border-0" required>
-                                                </div>
+                                                    <input type="text" id="manuscript" name="manuscript" placeholder="Enter drive link for manuscript"
+                                                           class="form-control p-0 border-0" required> </div>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="col-md-12 p-0">Plagiarism check report</label>
+                                                <label class="col-md-12 p-0">Upload plagarism report</label>
                                                 <div class="col-md-12 border-bottom p-0">
-                                                    <input type="file" placeholder="Upload your report" accept=".jpg,.png,.pdf" id="report"
-                                                        class="form-control p-0 border-0" required>
-                                                </div>
+                                                    <input type="text" id="report" name="report" placeholder="Enter drive link for plagarism report"
+                                                           class="form-control p-0 border-0" required> </div>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="col-md-12 p-0">Plagiarism percentage</label>
                                                 <div class="col-md-12 border-bottom p-0">
-                                                    <input type="number" id="Plagiarismpercent" placeholder="Your Plagiarism percentage"
+                                                    <input type="number" id="plagiarismpercent" name="plagiarismpercent" placeholder="Your Plagiarism percentage"
                                                         class="form-control p-0 border-0" required> </div>
                                             </div>
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="defaultCheck1">
                                                 <label class="form-check-label" for="defaultCheck1">
                                                   I acknowledge that the submitted manuscript was done by myself/my group on my/our own effort, and I/we give complete permission to review it and provide reviews and publish.
                                                 </label>
@@ -353,7 +337,7 @@
             {id: 0, text: "Computer science"},
             {id: 1, text: "Biotechnology "},
             {id: 2, text: "Psycology  "},
-            {id: 4, text: "Nanotechnology  "},
+            {id: 3, text: "Nanotechnology  "},
         ];
 
 

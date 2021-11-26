@@ -10,7 +10,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Entity
 public class Published {
     @Id
-    private String ref_id;
+    private Long ref_id;
     private int ISBN;
     @DateTimeFormat
     private Date date_of_Publication;
@@ -21,14 +21,14 @@ public class Published {
     /**
      * @return String return the ref_id
      */
-    public String getRef_id() {
+    public Long getRef_id() {
         return ref_id;
     }
 
     /**
      * @param ref_id the ref_id to set
      */
-    public void setRef_id(String ref_id) {
+    public void setRef_id(Long ref_id) {
         this.ref_id = ref_id;
     }
 
